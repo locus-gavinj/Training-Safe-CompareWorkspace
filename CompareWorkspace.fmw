@@ -1,0 +1,1894 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME\2023-1-2\fme.exe" C:\Users\GavinJeter\Downloads\CompareWorkspace.fmw
+#          --SourceDataset_ACAD "C:\FMETrainingData\Data\Parcels\BuildingFootprints.dwg"
+#          --SourceDataset_FILEGDB "C:\FMETrainingData\Data\Addresses\Addresses.gdb"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION="&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#10;    &lt;br/&gt;&#10;&lt;/p&gt;&#10;"
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="1741.26 523.632"
+#!   DOC_TOP_LEFT="100 -640.004"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="23641"
+#!   FME_BULK_MODE_THRESHOLD=""
+#!   FME_DOCUMENT_GUID="1f118c78-8f8e-47df-9057-5c2fff1ae717"
+#!   FME_DOCUMENT_PRIORGUID="e0aaa8a2-7359-4c3d-bedf-ae950860782a,b849802a-8e81-47e8-b83a-fe6c1c98864f,4e3c74ab-259f-4934-9e4f-7bf33faab552,788526ed-dba4-420a-b995-d37ab264e35d,90ffee18-f3db-4ed8-9db2-d0e5f008088b"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2023.1.2.0 (20231110 - Build 23641 - WIN64)"
+#!   LAST_SAVE_DATE="2025-04-07T13:51:32"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="311"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="NO"
+#!   TITLE="SpatialRelationships"
+#!   USAGE="&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&#10;    &lt;br/&gt;&#10;&lt;/p&gt;&#10;"
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="56.4242 108.508"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="144"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="ACAD"
+#!   DATASET="$(SourceDataset_ACAD)"
+#!   KEYWORD="ACAD_2"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="autocad_color 10 autocad_linetype CONTINUOUS autocad_layer_frozen no autocad_layer_hidden no autocad_layer_locked no autocad_layer_on yes autocad_layer_plottable yes autocad_layer_desc &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="autocad_active_anno_scale string autocad_alignment_x number(31,15) autocad_alignment_y number(31,15) autocad_alignment_z number(31,15) autocad_angbase number(31,15) autocad_angdir logical autocad_anno_force_visible logical autocad_anno_handle char(50) autocad_anno_height number(31,15) autocad_anno_scale{}.drawing_units number(31,15) autocad_anno_scale{}.name string autocad_anno_scale{}.paper_units number(31,15) autocad_anno_type char(30) autocad_anno_width number(31,15) autocad_arc_defpt.x number(31,15) autocad_arc_defpt.y number(31,15) autocad_arc_defpt.z number(31,15) autocad_arrow_head_on logical autocad_attach_point char(50) autocad_attmode number(6,0) autocad_attr_def_default string autocad_attr_def_prompt string autocad_attr_def_tag string autocad_attribute_display char(50) autocad_attributes_follow logical autocad_aunits number(6,0) autocad_auprec number(6,0) autocad_backwards char(1) autocad_base_x number(31,15) autocad_base_y number(31,15) autocad_base_z number(31,15) autocad_big_fontname char(65) autocad_block_insert_handle char(50) autocad_block_insert_x number(31,15) autocad_block_insert_y number(31,15) autocad_block_insert_z number(31,15) autocad_block_name char(50) autocad_block_number number(5,0) autocad_box_height number(31,15) autocad_box_width number(31,15) autocad_bulge char(50) autocad_cannoscale char(32) autocad_cannoscale_drawing_units number(31,15) autocad_cannoscale_paper_units number(31,15) autocad_clayer char(32) autocad_closed_spline number(6,0) autocad_color number(6,0) autocad_column_distance number(31,15) autocad_control_weights string autocad_control_x string autocad_control_y string autocad_control_z string autocad_defpt2.x number(31,15) autocad_defpt2.y number(31,15) autocad_defpt2.z number(31,15) autocad_defpt3.x number(31,15) autocad_defpt3.y number(31,15) autocad_defpt3.z number(31,15) autocad_defpt4.x number(31,15) autocad_defpt4.y number(31,15) autocad_defpt4.z number(31,15) autocad_degree number(31,15) autocad_dictionary_name char(50) autocad_dim_arc_end_param number(31,15) autocad_dim_arc_is_partial logical autocad_dim_arc_start_param number(31,15) autocad_dim_arc_symbol_type number(6,0) autocad_dim_arrowhead_pt_1.x number(31,15) autocad_dim_arrowhead_pt_1.y number(31,15) autocad_dim_arrowhead_pt_2.x number(31,15) autocad_dim_arrowhead_pt_2.y number(31,15) autocad_dim_clone_inspection_point.x number(31,15) autocad_dim_clone_inspection_point.y number(31,15) autocad_dim_clone_inspection_point.z number(31,15) autocad_dim_flag number(5,0) autocad_dim_leader_pt1.x number(31,15) autocad_dim_leader_pt1.y number(31,15) autocad_dim_leader_pt1.z number(31,15) autocad_dim_leader_pt2.x number(31,15) autocad_dim_leader_pt2.y number(31,15) autocad_dim_leader_pt2.z number(31,15) autocad_dimension_attach_point number(5,0) autocad_dimension_style_name char(50) autocad_dimension_type char(50) autocad_edge_1 char(10) autocad_edge_2 char(10) autocad_edge_3 char(10) autocad_edge_4 char(10) autocad_elevation number(31,15) autocad_end_tangent_x number(31,15) autocad_end_tangent_y number(31,15) autocad_end_tangent_z number(31,15) autocad_end_width number(31,15) autocad_entity char(50) autocad_entity_handle char(50) autocad_entity_visibility char(10) autocad_estimated_num_lines number(5,0) autocad_extended_data_list{} char(50) autocad_extended_data{0}.16Bit_integer{0} number(5,0) autocad_extended_data{0}.application_name char(50) autocad_extended_data{0}.autocad_layer{0} char(50) autocad_extended_data{0}.autocad_scale{0} number(31,15) autocad_extended_data{0}.binary{0} char(50) autocad_extended_data{0}.distance{0} number(31,15) autocad_extended_data{0}.handle{0} char(50) autocad_extended_data{0}.handle{1} char(50) autocad_extended_data{0}.handle{2} char(50) autocad_extended_data{0}.real{0} number(31,15) autocad_extended_data{0}.string{0} char(50) autocad_extended_data{0}.three_reals{0}.real1 number(31,15) autocad_extended_data{0}.three_reals{0}.real2 number(31,15) autocad_extended_data{0}.three_reals{0}.real3 number(31,15) autocad_extended_data{0}.world_direction{0}.x number(31,15) autocad_extended_data{0}.world_direction{0}.y number(31,15) autocad_extended_data{0}.world_direction{0}.z number(31,15) autocad_extended_data{0}.world_displacement{0}.x number(31,15) autocad_extended_data{0}.world_displacement{0}.y number(31,15) autocad_extended_data{0}.world_displacement{0}.z number(31,15) autocad_extended_data{0}.world_position{0}.x number(31,15) autocad_extended_data{0}.world_position{0}.y number(31,15) autocad_extended_data{0}.world_position{0}.z number(31,15) autocad_extended_data{}.16Bit_integer{0} number(5,0) autocad_extended_data{}.application_name char(50) autocad_extended_data{}.autocad_layer{0} char(50) autocad_extended_data{}.autocad_scale{0} number(31,15) autocad_extended_data{}.binary{0} char(50) autocad_extended_data{}.distance{0} number(31,15) autocad_extended_data{}.handle{0} char(50) autocad_extended_data{}.handle{1} char(50) autocad_extended_data{}.handle{2} char(50) autocad_extended_data{}.real{0} number(31,15) autocad_extended_data{}.string{} char(50) autocad_extended_data{}.three_reals{0}.real1 number(31,15) autocad_extended_data{}.three_reals{0}.real2 number(31,15) autocad_extended_data{}.three_reals{0}.real3 number(31,15) autocad_extended_data{}.world_direction{0}.x number(31,15) autocad_extended_data{}.world_direction{0}.y number(31,15) autocad_extended_data{}.world_direction{0}.z number(31,15) autocad_extended_data{}.world_displacement{0}.x number(31,15) autocad_extended_data{}.world_displacement{0}.y number(31,15) autocad_extended_data{}.world_displacement{0}.z number(31,15) autocad_extended_data{}.world_position{0}.x number(31,15) autocad_extended_data{}.world_position{0}.y number(31,15) autocad_extended_data{}.world_position{0}.z number(31,15) autocad_extmax_x number(31,15) autocad_extmax_y number(31,15) autocad_extmax_z number(31,15) autocad_extmin_x number(31,15) autocad_extmin_y number(31,15) autocad_extmin_z number(31,15) autocad_extrusion_x number(31,15) autocad_extrusion_y number(31,15) autocad_extrusion_z number(31,15) autocad_fill_color number(6,0) autocad_fillmode logical autocad_fit_tolerance number(31,15) autocad_fit_x string autocad_fit_y string autocad_fit_z string autocad_flag number(6,0) autocad_font_bold logical autocad_font_charset number(11,0) autocad_font_italic logical autocad_font_pitch_family number(11,0) autocad_font_typeface char(50) autocad_generation char(30) autocad_group_accessible char(50) autocad_group_anonymous char(50) autocad_group_description char(50) autocad_group_name char(50) autocad_group_num_entities char(50) autocad_group_selectable char(50) autocad_has_hook_line logical autocad_hatch_associative number(5,0) autocad_hatch_complex_mode number(5,0) autocad_hatch_gradient_angle number(31,15) autocad_hatch_gradient_color1 char(50) autocad_hatch_gradient_color2 char(50) autocad_hatch_gradient_name char(32) autocad_hatch_gradient_one_color_mode number(5,0) autocad_hatch_gradient_shift number(31,15) autocad_hatch_gradient_type number(6,0) autocad_hatch_loop{}.autocad_hatch_bulges_present number(5,0) autocad_hatch_loop{}.autocad_hatch_bulge{} number(31,15) autocad_hatch_loop{}.autocad_hatch_loop_type number(11,0) autocad_hatch_object_type number(6,0) autocad_hatch_origin_point_x number(31,15) autocad_hatch_origin_point_y number(31,15) autocad_hatch_pattern_angle number(31,15) autocad_hatch_pattern_double number(5,0) autocad_hatch_pattern_name char(32) autocad_hatch_pattern_scale number(31,15) autocad_hatch_pattern_space number(31,15) autocad_hatch_pattern_type number(6,0) autocad_hatch_pixel_size number(31,15) autocad_hatch_shade_tint_value number(31,15) autocad_hatch_style number(6,0) autocad_hook_line_on_xdir logical autocad_insunits number(6,0) autocad_invisible_attributes{} char(50) autocad_justification char(50) autocad_knot_param char(10) autocad_knot_tolerance number(31,15) autocad_knots string autocad_latitude number(31,15) autocad_layer char(50) autocad_layer_color number(6,0) autocad_layer_desc string autocad_layer_frozen char(10) autocad_layer_hidden char(10) autocad_layer_linetype char(32) autocad_layer_lineweight number(5,0) autocad_layer_locked char(10) autocad_layer_on char(10) autocad_layer_plottable char(10) autocad_layer_transparency number(5,0) autocad_layer_type char(50) autocad_layout_insert_base_x number(31,15) autocad_layout_insert_base_y number(31,15) autocad_layout_insert_base_z number(31,15) autocad_layout_limit_check logical autocad_layout_limit_max_x number(31,15) autocad_layout_limit_max_y number(31,15) autocad_layout_limit_min_x number(31,15) autocad_layout_limit_min_y number(31,15) autocad_layout_linetype_scale logical autocad_layout_name char(254) autocad_layout_tab_order number(11,0) autocad_line_defpoint.x number(31,15) autocad_line_defpoint.y number(31,15) autocad_line_defpoint.z number(31,15) autocad_linespace_factor number(31,15) autocad_linetype char(50) autocad_linetype_generation number(1,0) autocad_linetype_scale number(31,15) autocad_lineweight char(10) autocad_longitude number(31,15) autocad_lunits number(6,0) autocad_luprec number(6,0) autocad_mline_style char(50) autocad_mline_type char(50) autocad_mpolygon_associative number(5,0) autocad_mpolygon_gradient_angle number(31,15) autocad_mpolygon_gradient_color1 char(50) autocad_mpolygon_gradient_color2 char(50) autocad_mpolygon_gradient_name char(32) autocad_mpolygon_gradient_one_color_mode number(5,0) autocad_mpolygon_gradient_shift number(31,15) autocad_mpolygon_gradient_type number(6,0) autocad_mpolygon_object_type number(6,0) autocad_mpolygon_offset_x number(31,15) autocad_mpolygon_offset_y number(31,15) autocad_mpolygon_origin_point_x number(31,15) autocad_mpolygon_origin_point_y number(31,15) autocad_mpolygon_pattern_angle number(31,15) autocad_mpolygon_pattern_color char(50) autocad_mpolygon_pattern_double number(5,0) autocad_mpolygon_pattern_name char(32) autocad_mpolygon_pattern_scale number(31,15) autocad_mpolygon_pattern_space number(31,15) autocad_mpolygon_pattern_type number(6,0) autocad_mpolygon_pixel_size number(31,15) autocad_mpolygon_shade_tint_value number(31,15) autocad_mpolygon_style number(6,0) autocad_mtext_ref_rect_width number(31,15) autocad_mtext_string char(50) autocad_mtext_text_height number(31,15) autocad_normal_x number(31,15) autocad_normal_y number(31,15) autocad_normal_z number(31,15) autocad_num_cntl_pts number(11,0) autocad_num_fit_pts number(11,0) autocad_num_knots number(11,0) autocad_num_lines number(5,0) autocad_num_verts number(5,0) autocad_number_columns number(5,0) autocad_number_rows number(5,0) autocad_oblique number(31,15) autocad_original_color char(10) autocad_original_entity char(50) autocad_original_entity_type char(50) autocad_original_layer char(50) autocad_original_rotation number(31,15) autocad_original_text_size number(31,15) autocad_original_text_string string autocad_overlined char(1) autocad_path_type char(10) autocad_periodic_spline number(6,0) autocad_polyflag char(50) autocad_primary_axis number(31,15) autocad_projectname char(32) autocad_proxygraphics number(6,0) autocad_raster_brightness number(4,0) autocad_raster_clip_inverted logical autocad_raster_clip_points{}.x number(31,15) autocad_raster_clip_points{}.y number(31,15) autocad_raster_clip_points{}.z number(31,15) autocad_raster_contrast number(4,0) autocad_raster_display_opt_clip logical autocad_raster_display_opt_show logical autocad_raster_display_opt_show_unaligned logical autocad_raster_display_opt_transparent logical autocad_raster_fade number(4,0) autocad_raster_filename string autocad_raster_original_transparency char(50) autocad_raster_transparency number(4,0) autocad_rational_spline number(6,0) autocad_resolved_linetype char(50) autocad_resolved_lineweight number(5,0) autocad_resolved_transparency number(5,0) autocad_rotation number(31,15) autocad_row_distance number(31,15) autocad_scale number(31,15) autocad_secondary_axis number(31,15) autocad_shape_filename char(65) autocad_shape_height number(31,15) autocad_shape_index number(31,15) autocad_shape_name char(32) autocad_shape_rotation number(31,15) autocad_shape_vertical char(6) autocad_shape_width number(31,15) autocad_source_filename string autocad_space string autocad_spline_type char(15) autocad_start_angle number(31,15) autocad_start_tangent_x number(31,15) autocad_start_tangent_y number(31,15) autocad_start_tangent_z number(31,15) autocad_start_width number(31,15) autocad_store_bulges_mode logical autocad_sweep_angle number(31,15) autocad_text_midpoint.x number(31,15) autocad_text_midpoint.y number(31,15) autocad_text_midpoint.z number(31,15) autocad_text_rotation number(31,15) autocad_text_size number(31,15) autocad_text_string char(50) autocad_text_x_pos number(31,15) autocad_text_y_pos number(31,15) autocad_text_z_pos number(31,15) autocad_textpict char(50) autocad_thickness number(31,15) autocad_tracking_percent number(31,15) autocad_transparency number(5,0) autocad_true_color char(50) autocad_true_type_font char(50) autocad_txt_offset_x number(31,15) autocad_txt_offset_y number(31,15) autocad_txt_offset_z number(31,15) autocad_ucs_applied logical autocad_ucs_origin_x number(31,15) autocad_ucs_origin_y number(31,15) autocad_ucs_origin_z number(31,15) autocad_ucs_xangle number(31,15) autocad_ucs_xdir_x number(31,15) autocad_ucs_xdir_y number(31,15) autocad_ucs_xdir_z number(31,15) autocad_ucs_ydir_x number(31,15) autocad_ucs_ydir_y number(31,15) autocad_ucs_ydir_z number(31,15) autocad_underlay_adjusted_for_background logical autocad_underlay_clip_inverted logical autocad_underlay_clipped logical autocad_underlay_contrast number(6,0) autocad_underlay_definition_id char(50) autocad_underlay_fade number(6,0) autocad_underlay_item_name char(65) autocad_underlay_monochrome logical autocad_underlay_on logical autocad_underlay_source_filename char(65) autocad_underlay_type char(65) autocad_underlined char(1) autocad_upside_down char(1) autocad_version char(32) autocad_vertical char(1) autocad_viewport_ambient_light_color number(6,0) autocad_viewport_anno_scale string autocad_viewport_anno_scale_drawing_units number(31,15) autocad_viewport_anno_scale_paper_units number(31,15) autocad_viewport_back_clip logical autocad_viewport_back_clip_distance number(31,15) autocad_viewport_brightness number(31,15) autocad_viewport_center_point_x number(31,15) autocad_viewport_center_point_y number(31,15) autocad_viewport_center_point_z number(31,15) autocad_viewport_circle_sides number(6,0) autocad_viewport_clipped_handle char(50) autocad_viewport_contrast number(31,15) autocad_viewport_custom_scale number(31,15) autocad_viewport_default_lighting logical autocad_viewport_default_lighting_type number(6,0) autocad_viewport_front_clip logical autocad_viewport_front_clip_distance number(31,15) autocad_viewport_front_clip_eye logical autocad_viewport_grid logical autocad_viewport_grid_adaptive logical autocad_viewport_grid_bound_limits logical autocad_viewport_grid_follow logical autocad_viewport_grid_increment_x number(31,15) autocad_viewport_grid_increment_y number(31,15) autocad_viewport_grid_major number(6,0) autocad_viewport_grid_subdivision_restricted logical autocad_viewport_handle char(50) autocad_viewport_height number(31,15) autocad_viewport_hidden_lines_removed logical autocad_viewport_lens_length number(31,15) autocad_viewport_locked logical autocad_viewport_non_rect_clip logical autocad_viewport_non_rect_clip_handle char(50) autocad_viewport_on logical autocad_viewport_perspective logical autocad_viewport_plot_style_sheet string autocad_viewport_resolved_target_x number(31,15) autocad_viewport_resolved_target_y number(31,15) autocad_viewport_resolved_target_z number(31,15) autocad_viewport_shade_plot char(32) autocad_viewport_snap logical autocad_viewport_snap_angle number(31,15) autocad_viewport_snap_base_point_x number(31,15) autocad_viewport_snap_base_point_y number(31,15) autocad_viewport_snap_increment_x number(31,15) autocad_viewport_snap_increment_y number(31,15) autocad_viewport_snap_iso_pair number(6,0) autocad_viewport_snap_isometric logical autocad_viewport_standard_scale char(32) autocad_viewport_twist_angle number(31,15) autocad_viewport_ucs_elevation number(31,15) autocad_viewport_ucs_follow_mode logical autocad_viewport_ucs_icon_origin logical autocad_viewport_ucs_icon_visible logical autocad_viewport_ucs_origin_x number(31,15) autocad_viewport_ucs_origin_y number(31,15) autocad_viewport_ucs_origin_z number(31,15) autocad_viewport_ucs_saved_with_viewport logical autocad_viewport_ucs_xdir_x number(31,15) autocad_viewport_ucs_xdir_y number(31,15) autocad_viewport_ucs_xdir_z number(31,15) autocad_viewport_ucs_ydir_x number(31,15) autocad_viewport_ucs_ydir_y number(31,15) autocad_viewport_ucs_ydir_z number(31,15) autocad_viewport_view_center_x number(31,15) autocad_viewport_view_center_y number(31,15) autocad_viewport_view_direction_x number(31,15) autocad_viewport_view_direction_y number(31,15) autocad_viewport_view_direction_z number(31,15) autocad_viewport_view_height number(31,15) autocad_viewport_view_target_x number(31,15) autocad_viewport_view_target_y number(31,15) autocad_viewport_view_target_z number(31,15) autocad_viewport_width number(31,15) autocad_visible_attributes{} char(50) autocad_width number(31,15) autocad_width_factor number(31,15) autocad_x_dir_x number(31,15) autocad_x_dir_y number(31,15) autocad_x_dir_z number(31,15) autocad_xrecord_data_list{} char(50) autocad_xrecord_data{0}.16Bit_integer{0} number(5,0) autocad_xrecord_data{0}.autocad_layer{0} char(50) autocad_xrecord_data{0}.autocad_scale{0} number(31,15) autocad_xrecord_data{0}.binary{0} char(50) autocad_xrecord_data{0}.distance{0} number(31,15) autocad_xrecord_data{0}.handle{0} char(50) autocad_xrecord_data{0}.handle{1} char(50) autocad_xrecord_data{0}.handle{2} char(50) autocad_xrecord_data{0}.real{0} number(31,15) autocad_xrecord_data{0}.string{0} char(50) autocad_xrecord_data{0}.three_reals{0}.real1 number(31,15) autocad_xrecord_data{0}.three_reals{0}.real2 number(31,15) autocad_xrecord_data{0}.three_reals{0}.real3 number(31,15) autocad_xrecord_data{0}.world_direction{0}.x number(31,15) autocad_xrecord_data{0}.world_direction{0}.y number(31,15) autocad_xrecord_data{0}.world_direction{0}.z number(31,15) autocad_xrecord_data{0}.world_displacement{0}.x number(31,15) autocad_xrecord_data{0}.world_displacement{0}.y number(31,15) autocad_xrecord_data{0}.world_displacement{0}.z number(31,15) autocad_xrecord_data{0}.world_position{0}.x number(31,15) autocad_xrecord_data{0}.world_position{0}.y number(31,15) autocad_xrecord_data{0}.world_position{0}.z number(31,15) autocad_xrecord_data{0}.xrecord_name char(50) autocad_xrecord_data{}.16Bit_integer{0} number(5,0) autocad_xrecord_data{}.autocad_layer{0} char(50) autocad_xrecord_data{}.autocad_scale{0} number(31,15) autocad_xrecord_data{}.binary{0} char(50) autocad_xrecord_data{}.distance{0} number(31,15) autocad_xrecord_data{}.handle{0} char(50) autocad_xrecord_data{}.handle{1} char(50) autocad_xrecord_data{}.handle{2} char(50) autocad_xrecord_data{}.real{0} number(31,15) autocad_xrecord_data{}.string{} char(50) autocad_xrecord_data{}.three_reals{0}.real1 number(31,15) autocad_xrecord_data{}.three_reals{0}.real2 number(31,15) autocad_xrecord_data{}.three_reals{0}.real3 number(31,15) autocad_xrecord_data{}.world_direction{0}.x number(31,15) autocad_xrecord_data{}.world_direction{0}.y number(31,15) autocad_xrecord_data{}.world_direction{0}.z number(31,15) autocad_xrecord_data{}.world_displacement{0}.x number(31,15) autocad_xrecord_data{}.world_displacement{0}.y number(31,15) autocad_xrecord_data{}.world_displacement{0}.z number(31,15) autocad_xrecord_data{}.world_position{0}.x number(31,15) autocad_xrecord_data{}.world_position{0}.y number(31,15) autocad_xrecord_data{}.world_position{0}.z number(31,15) autocad_xrecord_data{}.xrecord_name char(50) autocad_xref_name char(50) autocad_xref_path string autocad_xref_status char(50) autocad_xref_type char(10) autocad_xscale number(31,15) autocad_yscale number(31,15) autocad_zscale number(31,15) fme_attrib_info{} char(50) fme_attrib_info{}.align_x number(31,15) fme_attrib_info{}.align_y number(31,15) fme_attrib_info{}.attribute_flag char(2) fme_attrib_info{}.color.blue number(31,15) fme_attrib_info{}.color.green number(31,15) fme_attrib_info{}.color.red number(31,15) fme_attrib_info{}.color.source char(10) fme_attrib_info{}.field_name char(513) fme_attrib_info{}.field_size number(5,0) fme_attrib_info{}.field_value char(2049) fme_attrib_info{}.generation char(25) fme_attrib_info{}.height number(31,15) fme_attrib_info{}.isVisible char(6) fme_attrib_info{}.justification char(25) fme_attrib_info{}.layer char(512) fme_attrib_info{}.location_x number(31,15) fme_attrib_info{}.location_y number(31,15) fme_attrib_info{}.location_z number(31,15) fme_attrib_info{}.oblique number(31,15) fme_attrib_info{}.rotation number(31,15) fme_attrib_info{}.style char(512) fme_attrib_info{}.width_factor number(31,15) fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis number(31,15) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_start_angle number(31,15) fme_sweep_angle number(31,15) fme_text_size number(31,15) fme_text_string char(50) fme_type char(50) multi_reader_full_id number(11,0) multi_reader_id number(11,0) multi_reader_keyword char(50) multi_reader_type char(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="23283"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ACAD_IN_USE_BLOCK_HEADER_LAYER ACAD_IN_USE_BLOCK_LAYER_INFO ACAD_IN_RESOLVE_ENTITY_COLOR ACAD_IN_PRESERVE_INSERTS ACAD_IN_READ_AS_GEOM_INSTANCES ACAD_IN_STORE_BULGE_INFO _BULGES_AS_ARCS ACAD_IN_INTERPRET_EXTENDED_DATA ACAD_IN_READ_GROUPS ACAD_IN_READ_USER_DICTIONARIES ACAD_IN_READ_XREFS ACAD_IN_EVALUATE_MLINE_GEOM ACAD_IN_CONVERT_ZERO_LENGTH_ARCS_TO_POINTS ACAD_IN_IGNORE_UCS ACAD_IN_PRESERVE_CLIPPED_RASTERS ACAD_IN_PRESERVE_COMPLEX_HATCHES ACAD_IN_IGNORE_FROZEN_LAYERS ACAD_IN_IGNORE_VIEWPORT_FROZEN_LAYERS ACAD_IN_IGNORE_HIDDEN_LAYERS ACAD_IN_STORE_SPLINE_DEFS ACAD_IN_USE_DXF_HEADER ACAD_IN_RESOLVE_DIMENSIONS ACAD_IN_APPLY_WORLD_FILE ACAD_IN_READ_PROXY_GRAPHICS ACAD_IN_READ_SYS_VARS ACAD_IN_READ_REGIONS_AS_AREAS ACAD_IN_READ_RASTERS ACAD_IN_STORE_LAYER_INFO ACAD_IN_STORE_INSERT_POINT ACAD_IN_LIST_EXTENDED_DATA ACAD_IN_LIST_ATTRIBUTE_ENTITY_DATA ACAD_IN_XRECORD_READING"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Layer1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Layer"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="MIME_TYPE"
+#!   VALUE=".dwg image/vnd.dwg .dxf image/vnd.dxf ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the DWG file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the DWG file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="FILEGDB"
+#!   DATASET="$(SourceDataset_FILEGDB)"
+#!   KEYWORD="FILEGDB_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="filegdb_type {FME_GEN_GEOMETRY} filegdb_where &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename text(50) fme_color text(50) fme_dataset text(50) fme_feature_type text(50) fme_fill_color text(50) fme_geometry fme_char(50) fme_primary_axis double fme_rotation double fme_secondary_axis double fme_start_angle double fme_sweep_angle double fme_text_size double fme_text_string text(50) fme_type text(50) multi_reader_full_id int multi_reader_id int multi_reader_keyword text(50) multi_reader_type text(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP filegdb_table_settings_group filegdb_where Table Settings&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT filegdb_where WHERE Clause&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES="indexed"
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="GEODATABASE"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="16492"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="FILEGDB_IN_SEARCH_ENVELOPE_MINX FILEGDB_IN_SEARCH_ENVELOPE_MINY FILEGDB_IN_SEARCH_ENVELOPE_MAXX FILEGDB_IN_SEARCH_ENVELOPE_MAXY FILEGDB_IN_CLIP_TO_ENVELOPE SEARCH_ENVELOPE_COORDINATE_SYSTEM FILEGDB_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="gdb file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="FeatureClass1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Feature Class or Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the File Geodatabase folder"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify File Geodatabase folder"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="ACAD"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text(2048)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text(2048)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text(2048)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="single"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text(20)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="text(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="int"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="objectid"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="guid"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="FILEGDB"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="globalid"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="FILEGDB"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_insert"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_shape"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_leader"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_xline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_ray"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_trace"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_solid"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_face"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_layout"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_arc"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_ellipse"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_spline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_attribute"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_multi_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_multi_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_attr_def"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_viewport"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_tolerance"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_dictionary"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_mline_style"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_class"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_hatch"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_mpolygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_surface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_solid3d"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_raster"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_xref"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_body"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_region"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_zombie"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_xrecord"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_leader"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_group"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_proxy"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_block"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_end_block"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_block"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_dimension"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_dimension_def"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_info"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_region"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_wipeout"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_underlay"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_oriented_arc"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_begin_block"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="autocad_polygon"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="ACAD"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_polyline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_polyline"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_no_geom"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_polyline"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_polyline"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_no_geom"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="FILEGDB"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="geodb_no_geom"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="FILEGDB"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="PostalAddress"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="3"
+#!   FEAT_GEOMTYPE="geodb_point"
+#!   POSITION="100 -530.50199999999995"
+#!   BOUNDING_RECT="100 -530.50199999999995 528.13099999999997 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="FILEGDB_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="objectid" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GlobalID" ATTR_TYPE="guid" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OWNERNM1" ATTR_TYPE="text(150)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OWNERNM2" ATTR_TYPE="text(150)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PSTLADDRESS" ATTR_TYPE="text(250)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PSTLCITY" ATTR_TYPE="text(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PSTLPROV" ATTR_TYPE="text(25)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="INTSTATE" ATTR_TYPE="text(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="INTPSTLCD" ATTR_TYPE="text(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="COUNTRY" ATTR_TYPE="text(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="REPRESENT" ATTR_TYPE="text(14)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="STATUS" ATTR_TYPE="text(9)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LASTUPDATE" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LASTEDITOR" ATTR_TYPE="text(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="POSTALCODE" ATTR_TYPE="text(6)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="filegdb_table_settings_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="filegdb_where" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="BuildingFootprints"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="14"
+#!   FEAT_GEOMTYPE="autocad_line autocad_point autocad_ellipse autocad_shape autocad_text autocad_arc autocad_trace autocad_solid autocad_insert autocad_polygon autocad_face autocad_ray autocad_xline autocad_spline autocad_multi_line autocad_multi_text autocad_dimension autocad_hatch autocad_mpolygon autocad_surface autocad_solid3d autocad_dimension_def autocad_attr_def autocad_info autocad_layout autocad_viewport autocad_group autocad_xrecord autocad_raster autocad_region autocad_wipeout autocad_underlay"
+#!   POSITION="100 -230"
+#!   BOUNDING_RECT="100 -230 528.13099999999997 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="ACAD_2"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="FILEGDB_1"
+#!   OVERRIDE="-FILEGDB_1_DATASET"
+#!   DATASET="FILEGDB_1/Addresses.gdb"
+#! />
+#! <DATASET
+#!   NAME="ACAD_2"
+#!   OVERRIDE="-ACAD_2_DATASET"
+#!   DATASET="ACAD_2/BuildingFootprints.dwg"
+#! />
+#! </READER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_ACAD DWG_Files(*.dwg)/DXF_Files(*.dxf)|*.dwg;*.dxf|DWG_Files(*.dwg)|*.dwg|DXF_Files(*.dxf)|*.dxf|All_Files|* Source Autodesk AutoCAD DWG/DXF File(s):"
+#!   DEFAULT_VALUE="C:\FMETrainingData\Data\Parcels\BuildingFootprints.dwg"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI SOURCE_GEODATABASE SourceDataset_FILEGDB Source Geodatabase:"
+#!   DEFAULT_VALUE="C:\FMETrainingData\Data\Addresses\Addresses.gdb"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IkM6XFxGTUVUcmFpbmluZ0RhdGFcXERhdGFcXFBhcmNlbHNcXEJ1aWxkaW5nRm9vdHByaW50cy5kd2ciLCJkZXByZWNhdGVkRmxhZ3MiOlsibm9uZSJdLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkRXRyBGaWxlcy9EWEYgRmlsZXMiLCJmaWx0ZXIiOlsiKi5kd2ciLCIqLmR4ZiJdfSx7ImRlc2NyaXB0aW9uIjoiRFdHIEZpbGVzIiwiZmlsdGVyIjpbIiouZHdnIl19LHsiZGVzY3JpcHRpb24iOiJEWEYgRmlsZXMiLCJmaWx0ZXIiOlsiKi5keGYiXX0seyJkZXNjcmlwdGlvbiI6IkFyY2hpdmUgRmlsZXMiLCJmaWx0ZXIiOlsiKi43eiIsIiouN3ppcCIsIioucmFyIiwiKi5ydnoiLCIqLnRhciIsIioudGFyLmJ6MiIsIioudGFyLmd6IiwiKi50Z3oiLCIqLnppcCIsIiouemlweCJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBGaWxlcyIsImZpbHRlciI6WyIqLmJ6MiIsIiouZ3oiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBGaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaW5jbHVkZVdlYkJyb3dzZXIiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X0FDQUQiLCJwcm9tcHQiOiJTb3VyY2UgQXV0b2Rlc2sgQXV0b0NBRCBEV0cvRFhGIEZpbGUocyk6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IkM6XFxGTUVUcmFpbmluZ0RhdGFcXERhdGFcXEFkZHJlc3Nlc1xcQWRkcmVzc2VzLmdkYiIsImRlcHJlY2F0ZWRGbGFncyI6WyJub25lIl0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZWdlb2RiIiwibmFtZSI6IlNvdXJjZURhdGFzZXRfRklMRUdEQiIsInByb21wdCI6IlNvdXJjZSBHZW9kYXRhYmFzZToiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOnRydWUsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_ACAD" 
+#!   DEFAULT_VALUE="C:\FMETrainingData\Data\Parcels\BuildingFootprints.dwg"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_ACAD DWG_Files(*.dwg)/DXF_Files(*.dxf)|*.dwg;*.dxf|DWG_Files(*.dwg)|*.dwg|DXF_Files(*.dxf)|*.dxf|All_Files|* Source Autodesk AutoCAD DWG/DXF File(s):"
+#! />
+#!     <INFO NAME="SourceDataset_FILEGDB" 
+#!   DEFAULT_VALUE="C:\FMETrainingData\Data\Addresses\Addresses.gdb"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI SOURCE_GEODATABASE SourceDataset_FILEGDB Source Geodatabase:"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="4"
+#!   TYPE="SpatialFilter"
+#!   VERSION="8"
+#!   POSITION="856.25900000000001 -296.87799999999999"
+#!   BOUNDING_RECT="856.25900000000001 -296.87799999999999 431 71"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="16492"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GlobalID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="OWNERNM1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="OWNERNM2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PSTLADDRESS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PSTLCITY" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PSTLPROV" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="INTSTATE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="INTPSTLCD" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTRY" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="REPRESENT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LASTUPDATE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="LASTEDITOR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="POSTALCODE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_predicate" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="GlobalID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="OWNERNM1" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="OWNERNM2" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="PSTLADDRESS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="PSTLCITY" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="PSTLPROV" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="INTSTATE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="INTPSTLCD" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTRY" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="REPRESENT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="LASTUPDATE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="LASTEDITOR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="POSTALCODE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="GlobalID" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="OWNERNM1" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="OWNERNM2" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="PSTLADDRESS" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="PSTLCITY" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="PSTLPROV" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="INTSTATE" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="INTPSTLCD" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="COUNTRY" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="REPRESENT" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="STATUS" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="LASTUPDATE" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="LASTEDITOR" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="POSTALCODE" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="AGGREGATE_HANDLING" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_MODE" PARM_VALUE="Merge Filter"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Use Candidate"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_PREFIX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="BASE_TYPE" PARM_VALUE="Multiple Filters"/>
+#!     <XFORM_PARM PARM_NAME="CURVE_BOUNDARY_RULE_PARAM" PARM_VALUE="Default Rule"/>
+#!     <XFORM_PARM PARM_NAME="FME_PROCESS_COUNTDISP" PARM_VALUE="No Parallelism"/>
+#!     <XFORM_PARM PARM_NAME="FME_PROCESS_GROUPS_ORDERED" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PASS_CRITERIA" PARM_VALUE="Pass Against One Filter"/>
+#!     <XFORM_PARM PARM_NAME="PREDATTR" PARM_VALUE="_predicate"/>
+#!     <XFORM_PARM PARM_NAME="PREDICATES" PARM_VALUE="CONTAINS"/>
+#!     <XFORM_PARM PARM_NAME="TESTS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USE_BOUNDING_BOX" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SpatialFilter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="Inspector"
+#!   VERSION="3"
+#!   POSITION="831.12699999999995 -116.372"
+#!   BOUNDING_RECT="831.12699999999995 -116.372 498.762 71"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="16492"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="BuildingFootprints"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="7"
+#!   TYPE="Inspector"
+#!   VERSION="3"
+#!   POSITION="1410.26 -431.00400000000002"
+#!   BOUNDING_RECT="1410.26 -431.00400000000002 431 71"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="16492"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Passed"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="9"
+#!   TYPE="Inspector"
+#!   VERSION="3"
+#!   POSITION="1410.26 -569.00400000000002"
+#!   BOUNDING_RECT="1410.26 -569.00400000000002 431 71"
+#!   ORDER="500000000000000"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="16492"
+#! >
+#!     <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#!     <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Failed"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="6"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 1 Candidate"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="5"
+#!   SOURCE_NODE="14"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 Filter"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="14"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="8"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="7"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="10"
+#!   SOURCE_NODE="4"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="fo 1 FAILED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 311
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_ACAD_2,ACAD_IN_ENTITY_OPTIONS_ACAD_2,ACAD_IN_RESOLVE_BLOCKS_ACAD_2,ACAD_IN_USE_BLOCK_HEADER_LAYER_ACAD_2,ACAD_IN_USE_BLOCK_LAYER_INFO_ACAD_2,ACAD_IN_STORE_INSERT_POINT_ACAD_2,ACAD_IN_PRESERVE_INSERTS_ACAD_2,ACAD_IN_READ_AS_GEOM_INSTANCES_ACAD_2,ACAD_IN_RESOLVE_SELECTED_BLOCKS_ACAD_2,ACAD_IN_VISIBLE_ATTRIBUTES_AS_TEXT_ACAD_2,ACAD_IN_EXPLODE_MTEXT_ACAD_2,ACAD_IN_READ_AS_2_5D_ACAD_2,ACAD_IN_SPACE_OPTIONS_ACAD_2,ACAD_IN_READ_MODEL_SPACE_ACAD_2,ACAD_IN_READ_PAPER_SPACE_ACAD_2,ACAD_IN_READ_SELECTED_PAPER_SPACE_ACAD_2,ACAD_IN_READ_PAPER_SPACE_LAYOUTS_ACAD_2,ACAD_IN_RESOLVE_VIEWPORTS_ACAD_2,ACAD_IN_ACAD_ATTRIBUTE_OPTIONS_ACAD_2,ACAD_IN_INTERPRET_EXTENDED_DATA_ACAD_2,ACAD_IN_LIST_EXTENDED_DATA_ACAD_2,ACAD_IN_LIST_ATTRIBUTE_ENTITY_DATA_ACAD_2,ACAD_IN_XRECORD_READING_ACAD_2,ACAD_IN_READ_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_2,ACAD_IN_LIST_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_2,ACAD_IN_USE_SEARCH_ENVELOPE_ACAD_2,ACAD_IN_SEARCH_ENVELOPE_MINX_ACAD_2,ACAD_IN_SEARCH_ENVELOPE_MINY_ACAD_2,ACAD_IN_SEARCH_ENVELOPE_MAXX_ACAD_2,ACAD_IN_SEARCH_ENVELOPE_MAXY_ACAD_2,ACAD_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ACAD_2,ACAD_IN_CLIP_TO_ENVELOPE_ACAD_2,ACAD_IN_ACAD_RDR_ADV_PARM_GROUP_ACAD_2,ACAD_IN_CONVERT_ZERO_LENGTH_ARCS_TO_POINTS_ACAD_2,ACAD_IN_RESOLVE_ENTITY_COLOR_ACAD_2,ACAD_IN_PRESERVE_COMPLEX_HATCHES_ACAD_2,ACAD_IN_READ_GROUPS_ACAD_2,ACAD_IN_READ_USER_DICTIONARIES_ACAD_2,ACAD_IN_READ_XREFS_ACAD_2,ACAD_IN_EVALUATE_MLINE_GEOM_ACAD_2,ACAD_IN_STORE_LAYER_INFO_ACAD_2,ACAD_IN_STORE_BULGE_INFO_ACAD_2,ACAD_IN_STORE_SPLINE_DEFS_ACAD_2,ACAD_IN_RESOLVE_DIMENSIONS_ACAD_2,ACAD_IN_PRESERVE_CLIPPED_RASTERS_ACAD_2,ACAD_IN_IGNORE_FROZEN_LAYERS_ACAD_2,ACAD_IN_IGNORE_VIEWPORT_FROZEN_LAYERS_ACAD_2,ACAD_IN_IGNORE_HIDDEN_LAYERS_ACAD_2,ACAD_IN_IGNORE_UCS_ACAD_2,ACAD_IN_APPLY_WORLD_FILE_ACAD_2,ACAD_IN_READ_PROXY_GRAPHICS_ACAD_2,ACAD_IN_READ_SYS_VARS_ACAD_2,ACAD_IN_READ_REGIONS_AS_AREAS_ACAD_2,ACAD_IN_READ_RASTERS_ACAD_2,ACAD_IN_DXF_HEADER_GROUP_ACAD_2,ACAD_IN_USE_DXF_HEADER_ACAD_2,ACAD_IN_NETWORK_AUTHENTICATION_ACAD_2,SourceDataset_FILEGDB_1,FILEGDB_IN_EXPOSE_ATTRS_GROUP_FILEGDB_1,FILEGDB_IN_SEARCH_ENVELOPE_MINX_FILEGDB_1,FILEGDB_IN_SEARCH_ENVELOPE_MINY_FILEGDB_1,FILEGDB_IN_SEARCH_ENVELOPE_MAXX_FILEGDB_1,FILEGDB_IN_SEARCH_ENVELOPE_MAXY_FILEGDB_1,FILEGDB_IN_CLIP_TO_ENVELOPE_FILEGDB_1,FILEGDB_IN_NETWORK_AUTHENTICATION_FILEGDB_1,SEARCH_ENVELOPE_COORDINATE_SYSTEM_FILEGDB_1
+# ============================================================================
+DEFAULT_MACRO SourceDataset_ACAD C:\FMETrainingData\Data\Parcels\BuildingFootprints.dwg
+
+DEFAULT_MACRO SourceDataset_FILEGDB C:\FMETrainingData\Data\Addresses\Addresses.gdb
+
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_ACAD$encode)} == {}} { puts_real {Parameter 'SourceDataset_ACAD' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_FILEGDB$encode)} == {}} { puts_real {Parameter 'SourceDataset_FILEGDB' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} ACAD
+MULTI_READER_KEYWORD{0} ACAD_2
+MULTI_READER_GEN_DIRECTIVES{0} UPDATE_FEATURE_TYPES,yes,STORE_SPLINE_DEFS,yes,RESOLVE_SELECTED_BLOCKS,,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,EXPLODE_MTEXT,yes,RESOLVE_ENTITY_COLOR,yes,READ_DYNAMIC_BLOCK_ATTRIBUTES,no,READ_SYS_VARS,no,USE_BLOCK_HEADER_LAYER,yes,APPLY_WORLD_FILE,yes,READ_USER_DICTIONARIES,no,STORE_BULGE_INFO,no,RESOLVE_DIMENSIONS,yes,IGNORE_FROZEN_LAYERS,no,SEARCH_ENVELOPE_MAXX,0,USE_BLOCK_LAYER_INFO,no,PRESERVE_COMPLEX_HATCHES,no,ENTITY_OPTIONS,,SEARCH_ENVELOPE_MINX,0,USE_DXF_HEADER,,SEARCH_ENVELOPE_MAXY,0,LIST_ATTRIBUTE_ENTITY_DATA,yes,IGNORE_UCS,no,LIST_EXTENDED_DATA,yes,IGNORE_HIDDEN_LAYERS,yes,IGNORE_VIEWPORT_FROZEN_LAYERS,no,ALLOW_DASH_CHAR_IN_ATTR_NAMES,yes,LIST_DYNAMIC_BLOCK_ATTRIBUTES,yes,USE_NEW_PAPER_SPACE_PARAMETERS,yes,READ_XREFS,no,CLIP_TO_ENVELOPE,NO,READ_AS_2_5D,no,STORE_LAYER_INFO,no,APPLY_WORLD_FILE_TO_ATTRS,YES,_MERGE_SCHEMAS,YES,READ_GROUPS,no,STRUCTURE_EXTENDED_DATA,no,READ_PAPER_SPACE_LAYOUTS,yes,RESOLVE_VIEWPORTS,<lt>Unused<gt>,STORE_INSERT_POINT,no,METAFILE,acad,PRESERVE_CLIPPED_RASTERS,no,ACAD_EXPOSE_FORMAT_ATTRS,,USE_SEARCH_ENVELOPE,NO,READ_RASTERS,yes,EVALUATE_MLINE_GEOM,no,VISIBLE_ATTRIBUTES_AS_TEXT,yes,INTERPRET_EXTENDED_DATA,yes,ALL_MERGED_FILTERS_NEED_NO_DEFS,Yes,READ_SELECTED_PAPER_SPACE,,SPACE_OPTIONS,,RESOLVE_BLOCKS,yes,READ_AS_GEOM_INSTANCES,no,ACAD_RDR_ADV_PARM_GROUP,,READ_PROXY_GRAPHICS,yes,XRECORD_READING,Lists,SEARCH_ENVELOPE_MINY,0,DXF_HEADER_GROUP,,EXPOSE_ATTRS_GROUP,,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,PRESERVE_INSERTS,no,READ_REGIONS_AS_AREAS,yes,ACAD_ATTRIBUTE_OPTIONS,,CONVERT_ZERO_LENGTH_ARCS_TO_POINTS,yes,READ_PAPER_SPACE,NO,READ_MODEL_SPACE,yes
+MULTI_READER_TYPE{1} FILEGDB
+MULTI_READER_KEYWORD{1} FILEGDB_1
+MULTI_READER_GEN_DIRECTIVES{1} TABLELIST,,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXY,0,FME_CONNECTION_GROUP,,EXPOSE_ATTRS_GROUP,,FILEGDB_EXPOSE_FORMAT_ATTRS,,CLIP_TO_ENVELOPE,NO,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MINX,0,USE_SEARCH_ENVELOPE,NO,_MERGE_SCHEMAS,YES
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD MULTI_DEST
+MULTI_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+FACTORY_DEF * BranchingFactory                                         \
+  FACTORY_NAME "Source Feature Router"                                 \
+  COMMAND_PARM_EVALUATION SINGLE_PASS                                  \
+  INPUT FEATURE_TYPE *                                                 \
+  TARGET_FACTORY @Concatenate("Source Catcher ", &multi_reader_id)     \
+  FALLBACK_TARGET_FACTORY "Branching Catcher"
+
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ACAD_2"
+FACTORY_DEF * TeeFactory                                               \
+  FACTORY_NAME "Source Catcher 0"                                      \
+  INPUT FEATURE_TYPE *                                                 \
+  OUTPUT FEATURE_TYPE *
+
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ACAD ACAD_2
+# ============================================================================
+# The following GUI line prompts for a file to be used as the
+# source of the DWG/DXF translation.
+# The user input is stored in a MACRO, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_ACAD_2 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ACAD ACAD_2
+DEFAULT_MACRO SourceDataset_ACAD_2 $(SourceDataset_ACAD)
+GUI MULTIFILE SourceDataset_ACAD_2 DWG_Files(*.dwg)/DXF_Files(*.dxf)|*.dwg;*.dxf|DWG_Files(*.dwg)|*.dwg|DXF_Files(*.dxf)|*.dxf|All_Files(*)|* Source Autodesk AutoCAD DWG/DXF File(s):
+DEFAULT_MACRO _BULGES_AS_ARCS_ACAD_2 no
+ACAD_2_SPLIT_BULGE_ARCS $(_BULGES_AS_ARCS_ACAD_2)
+# ============================================================================
+# Now define a TestFactory which deletes any Insert entities
+# which do not have any attributes following. If you want to get
+# rid of these points for any reason then, remove the comments
+#
+#FACTORY_DEF * TestFactory # INPUT FEATURE_TYPE * autocad_entity autocad_insert # TEST &autocad_attributes_follow = false # OUTPUT FAILED   FEATURE_TYPE *
+#
+DEFAULT_MACRO WB_KEYWORD_ACAD_2 "DWG"
+FACTORY_DEF * TeeFactory                              \
+FACTORY_NAME $(WB_KEYWORD)"RenameAutocadExtendedAttrs"          \
+INPUT FEATURE_TYPE *                               \
+OUTPUT FEATURE_TYPE *                              \
+@CopyAttributes(autocad_extended_data_list{},extended_data_list{})    \
+@CopyAttributes(autocad_extended_data{},extended_data{})    \
+@RemoveAttributes(fme_regexp_match,^extended_data)
+DEFAULT_MACRO ACAD_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_ACAD_2 Yes
+ACAD_2_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(ACAD_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_ACAD_2)"
+DEFAULT_MACRO ACAD_IN_ALL_MERGED_FILTERS_NEED_NO_DEFS_ACAD_2 Yes
+ACAD_2_ALL_MERGED_FILTERS_NEED_NO_DEFS "$(ACAD_IN_ALL_MERGED_FILTERS_NEED_NO_DEFS_ACAD_2)"
+DEFAULT_MACRO ACAD_IN_APPLY_WORLD_FILE_TO_ATTRS_ACAD_2 YES
+ACAD_2_APPLY_WORLD_FILE_TO_ATTRS "$(ACAD_IN_APPLY_WORLD_FILE_TO_ATTRS_ACAD_2)"
+DEFAULT_MACRO ACAD_IN_ENTITY_OPTIONS_ACAD_2 
+GUI OPTIONAL DISCLOSUREGROUP ACAD_IN_ENTITY_OPTIONS_ACAD_2 ACAD_IN_RESOLVE_BLOCKS_ACAD_2%ACAD_IN_VISIBLE_ATTRIBUTES_AS_TEXT_ACAD_2%ACAD_IN_EXPLODE_MTEXT_ACAD_2%ACAD_IN_READ_AS_2_5D_ACAD_2 Entity Options
+# ============================================================================
+# And indicate whether or not we are to expand the blocks.
+DEFAULT_MACRO ACAD_IN_RESOLVE_BLOCKS_ACAD_2 yes
+ACAD_2_RESOLVE_BLOCKS "$(ACAD_IN_RESOLVE_BLOCKS_ACAD_2)"
+GUI ACTIVEDISCLOSUREGROUP ACAD_IN_RESOLVE_BLOCKS_ACAD_2 FME_DISCLOSURE_CLOSED%ACAD_IN_USE_BLOCK_HEADER_LAYER_ACAD_2%ACAD_IN_USE_BLOCK_LAYER_INFO_ACAD_2%ACAD_IN_STORE_INSERT_POINT_ACAD_2%ACAD_IN_PRESERVE_INSERTS_ACAD_2%ACAD_IN_READ_AS_GEOM_INSTANCES_ACAD_2%ACAD_IN_RESOLVE_SELECTED_BLOCKS_ACAD_2 Explode Blocks into Entities
+GUI LOOKUP ACAD_IN_RESOLVE_BLOCKS_ACAD_2 YES,yes%NO,no 
+# ============================================================================
+# Indicate whether we want to use the block header feature type for the components
+# when blocks are exploded or to read components on their original feature types.
+DEFAULT_MACRO ACAD_IN_USE_BLOCK_HEADER_LAYER_ACAD_2 yes
+ACAD_2_USE_BLOCK_HEADER_LAYER "$(ACAD_IN_USE_BLOCK_HEADER_LAYER_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_USE_BLOCK_HEADER_LAYER_ACAD_2 yes%no Use Block Feature Type for Components
+GUI LOOKUP ACAD_IN_USE_BLOCK_HEADER_LAYER_ACAD_2 <Unused>,no 
+# ============================================================================
+# Indicate whether we want to use the block header layer information for the components
+# when blocks are exploded or to read components with their original layer information.
+DEFAULT_MACRO ACAD_IN_USE_BLOCK_LAYER_INFO_ACAD_2 no
+ACAD_2_USE_BLOCK_LAYER_INFO "$(ACAD_IN_USE_BLOCK_LAYER_INFO_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_USE_BLOCK_LAYER_INFO_ACAD_2 yes%no Use Block Layer Information for Components
+GUI LOOKUP ACAD_IN_USE_BLOCK_LAYER_INFO_ACAD_2 <Unused>,no 
+# ============================================================================
+# Indicate whether we want to store the insert location for the block reference
+# on the components when blocks are exploded.
+DEFAULT_MACRO ACAD_IN_STORE_INSERT_POINT_ACAD_2 no
+ACAD_2_STORE_INSERT_POINT "$(ACAD_IN_STORE_INSERT_POINT_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_STORE_INSERT_POINT_ACAD_2 yes%no Store Insert Location on Components
+GUI LOOKUP ACAD_IN_STORE_INSERT_POINT_ACAD_2 <Unused>,no 
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_PRESERVE_INSERTS_ACAD_2 no
+ACAD_2_PRESERVE_INSERTS "$(ACAD_IN_PRESERVE_INSERTS_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_PRESERVE_INSERTS_ACAD_2 yes%no Preserve Insert Points
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_READ_AS_GEOM_INSTANCES_ACAD_2 no
+ACAD_2_READ_AS_GEOM_INSTANCES "$(ACAD_IN_READ_AS_GEOM_INSTANCES_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_AS_GEOM_INSTANCES_ACAD_2 yes%no Read as Geometry Instances
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_RESOLVE_SELECTED_BLOCKS_ACAD_2 
+ACAD_2_RESOLVE_SELECTED_BLOCKS "$(ACAD_IN_RESOLVE_SELECTED_BLOCKS_ACAD_2)"
+GUI OPTIONAL DYNAMIC_MULTI_SELECT_ENCODED ACAD_IN_RESOLVE_SELECTED_BLOCKS_ACAD_2 $[SourceDataset_ACAD_2],_READ_SCHEMA_OVERRIDE_MODE,BLOCK_NAMES,_FORMAT_OVERRIDE_,ACAD Explode Selected Blocks
+# ============================================================================
+# As well, see if we should turn visible attributes into text
+# entities so they will be visible in the output system
+DEFAULT_MACRO ACAD_IN_VISIBLE_ATTRIBUTES_AS_TEXT_ACAD_2 yes
+ACAD_2_VISIBLE_ATTRIBUTES_AS_TEXT "$(ACAD_IN_VISIBLE_ATTRIBUTES_AS_TEXT_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_VISIBLE_ATTRIBUTES_AS_TEXT_ACAD_2 yes%no Read Visible Attributes as Text Entities
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_EXPLODE_MTEXT_ACAD_2 yes
+ACAD_2_EXPLODE_MTEXT "$(ACAD_IN_EXPLODE_MTEXT_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_EXPLODE_MTEXT_ACAD_2 yes%no Explode MText Entities
+# ============================================================================
+# read polylines as 2D or 2.5D polylines
+DEFAULT_MACRO ACAD_IN_READ_AS_2_5D_ACAD_2 no
+ACAD_2_READ_AS_2_5D "$(ACAD_IN_READ_AS_2_5D_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_AS_2_5D_ACAD_2 yes%no Read Polylines as 2.5D
+DEFAULT_MACRO ACAD_IN_SPACE_OPTIONS_ACAD_2 
+GUI OPTIONAL DISCLOSUREGROUP ACAD_IN_SPACE_OPTIONS_ACAD_2 ACAD_IN_READ_MODEL_SPACE_ACAD_2%ACAD_IN_READ_PAPER_SPACE_ACAD_2 Model and Paper Space Options
+# ============================================================================
+# Should we read the model space
+DEFAULT_MACRO ACAD_IN_READ_MODEL_SPACE_ACAD_2 yes
+ACAD_2_READ_MODEL_SPACE "$(ACAD_IN_READ_MODEL_SPACE_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_MODEL_SPACE_ACAD_2 yes%no Read Model Space
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_READ_PAPER_SPACE_ACAD_2 NO
+ACAD_2_READ_PAPER_SPACE "$(ACAD_IN_READ_PAPER_SPACE_ACAD_2)"
+GUI ACTIVEDISCLOSUREGROUP ACAD_IN_READ_PAPER_SPACE_ACAD_2 FME_DISCLOSURE_CLOSED%ACAD_IN_READ_SELECTED_PAPER_SPACE_ACAD_2%ACAD_IN_READ_PAPER_SPACE_LAYOUTS_ACAD_2%ACAD_IN_RESOLVE_VIEWPORTS_ACAD_2 Read Paper Space
+# ============================================================================
+# Indicate which paperspaces we will read
+DEFAULT_MACRO ACAD_IN_READ_SELECTED_PAPER_SPACE_ACAD_2 
+ACAD_2_READ_SELECTED_PAPER_SPACE "$(ACAD_IN_READ_SELECTED_PAPER_SPACE_ACAD_2)"
+GUI OPTIONAL DYNAMIC_MULTI_SELECT_ENCODED ACAD_IN_READ_SELECTED_PAPER_SPACE_ACAD_2 $[SourceDataset_ACAD_2],_READ_SCHEMA_OVERRIDE_MODE,LAYOUT_NAMES,_FORMAT_OVERRIDE_,ACAD Read Selected Paper Spaces
+GUI LOOKUP ACAD_IN_READ_SELECTED_PAPER_SPACE_ACAD_2 <Unused>, 
+# ============================================================================
+# Indicate whether or not we will read paper space layout information.
+DEFAULT_MACRO ACAD_IN_READ_PAPER_SPACE_LAYOUTS_ACAD_2 yes
+ACAD_2_READ_PAPER_SPACE_LAYOUTS "$(ACAD_IN_READ_PAPER_SPACE_LAYOUTS_ACAD_2)"
+GUI OPTIONAL CHECKBOX ACAD_IN_READ_PAPER_SPACE_LAYOUTS_ACAD_2 yes%no Read Paper Space Layout Information
+GUI LOOKUP ACAD_IN_READ_PAPER_SPACE_LAYOUTS_ACAD_2 <Unused>,yes 
+# ============================================================================
+# Should we resolve viewports
+DEFAULT_MACRO ACAD_IN_RESOLVE_VIEWPORTS_ACAD_2 
+ACAD_2_RESOLVE_VIEWPORTS "$(ACAD_IN_RESOLVE_VIEWPORTS_ACAD_2)"
+GUI OPTIONAL CHECKBOX ACAD_IN_RESOLVE_VIEWPORTS_ACAD_2 yes%no Read Model Space Entities Through Viewport
+DEFAULT_MACRO ACAD_IN_ACAD_ATTRIBUTE_OPTIONS_ACAD_2 
+GUI OPTIONAL DISCLOSUREGROUP ACAD_IN_ACAD_ATTRIBUTE_OPTIONS_ACAD_2 ACAD_IN_INTERPRET_EXTENDED_DATA_ACAD_2%ACAD_IN_LIST_EXTENDED_DATA_ACAD_2%ACAD_IN_LIST_ATTRIBUTE_ENTITY_DATA_ACAD_2%ACAD_IN_XRECORD_READING_ACAD_2%ACAD_IN_READ_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_2%ACAD_IN_LIST_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_2 Attribute Options
+# ============================================================================
+# 20140211 - allow control over additional interpreted representation for user EED
+DEFAULT_MACRO ACAD_IN_INTERPRET_EXTENDED_DATA_ACAD_2 yes
+ACAD_2_INTERPRET_EXTENDED_DATA "$(ACAD_IN_INTERPRET_EXTENDED_DATA_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_INTERPRET_EXTENDED_DATA_ACAD_2 yes%no Read Interpreted Extended Entity Data
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_LIST_EXTENDED_DATA_ACAD_2 yes
+ACAD_2_LIST_EXTENDED_DATA "$(ACAD_IN_LIST_EXTENDED_DATA_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_LIST_EXTENDED_DATA_ACAD_2 yes%no Read Extended Entity Data As List
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_LIST_ATTRIBUTE_ENTITY_DATA_ACAD_2 yes
+ACAD_2_LIST_ATTRIBUTE_ENTITY_DATA "$(ACAD_IN_LIST_ATTRIBUTE_ENTITY_DATA_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_LIST_ATTRIBUTE_ENTITY_DATA_ACAD_2 yes%no Read Attribute Entity Data As List
+# ============================================================================
+# Ensure that the legacy form is still used, so we don't have to make a new directive
+DEFAULT_MACRO ACAD_IN_XRECORD_READING_ACAD_2 Lists
+ACAD_2_XRECORD_READING "$(ACAD_IN_XRECORD_READING_ACAD_2)"
+#GUI CHOICE XRECORD_READING None%Lists Entity XRecord Reading
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_XRECORD_READING_ACAD_2 Lists%None Entity XRecord Data Reading
+# ============================================================================
+# Determines whether dynamic block attributes will be read
+DEFAULT_MACRO ACAD_IN_READ_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_2 no
+ACAD_2_READ_DYNAMIC_BLOCK_ATTRIBUTES "$(ACAD_IN_READ_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_2 yes%no Read Dynamic Block Attributes
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_LIST_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_2 yes
+ACAD_2_LIST_DYNAMIC_BLOCK_ATTRIBUTES "$(ACAD_IN_LIST_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_LIST_DYNAMIC_BLOCK_ATTRIBUTES_ACAD_2 yes%no Read Dynamic Block Attributes As List
+DEFAULT_MACRO ACAD_IN_EXPOSE_ATTRS_GROUP_ACAD_2 
+ACAD_2_EXPOSE_ATTRS_GROUP "$(ACAD_IN_EXPOSE_ATTRS_GROUP_ACAD_2)"
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO ACAD_IN_USE_SEARCH_ENVELOPE_ACAD_2 NO
+ACAD_2_USE_SEARCH_ENVELOPE "$(ACAD_IN_USE_SEARCH_ENVELOPE_ACAD_2)"
+GUI ACTIVEDISCLOSUREGROUP ACAD_IN_USE_SEARCH_ENVELOPE_ACAD_2 ACAD_IN_SEARCH_ENVELOPE_MINX_ACAD_2%ACAD_IN_SEARCH_ENVELOPE_MINY_ACAD_2%ACAD_IN_SEARCH_ENVELOPE_MAXX_ACAD_2%ACAD_IN_SEARCH_ENVELOPE_MAXY_ACAD_2%ACAD_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ACAD_2%ACAD_IN_CLIP_TO_ENVELOPE_ACAD_2%ACAD_IN_SEARCH_METHOD%ACAD_IN_SEARCH_METHOD_FILTER%ACAD_IN_SEARCH_ORDER%ACAD_IN_SEARCH_FEATURE%ACAD_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP ACAD_IN_SEARCH_ENVELOPE_MINX_ACAD_2 <Unused>,0 
+DEFAULT_MACRO ACAD_IN_SEARCH_ENVELOPE_MINX_ACAD_2 0
+ACAD_2_SEARCH_ENVELOPE "$(ACAD_IN_SEARCH_ENVELOPE_MINX_ACAD_2)"
+GUI OPTIONAL FLOAT ACAD_IN_SEARCH_ENVELOPE_MINX_ACAD_2 Minimum X:
+# ===========================================================================
+GUI LOOKUP ACAD_IN_SEARCH_ENVELOPE_MINY_ACAD_2 <Unused>,0 
+DEFAULT_MACRO ACAD_IN_SEARCH_ENVELOPE_MINY_ACAD_2 0
+ACAD_2_SEARCH_ENVELOPE "$(ACAD_IN_SEARCH_ENVELOPE_MINY_ACAD_2)"
+GUI OPTIONAL FLOAT ACAD_IN_SEARCH_ENVELOPE_MINY_ACAD_2 Minimum Y:
+# ===========================================================================
+GUI LOOKUP ACAD_IN_SEARCH_ENVELOPE_MAXX_ACAD_2 <Unused>,0 
+DEFAULT_MACRO ACAD_IN_SEARCH_ENVELOPE_MAXX_ACAD_2 0
+ACAD_2_SEARCH_ENVELOPE "$(ACAD_IN_SEARCH_ENVELOPE_MAXX_ACAD_2)"
+GUI OPTIONAL FLOAT ACAD_IN_SEARCH_ENVELOPE_MAXX_ACAD_2 Maximum X:
+# ===========================================================================
+GUI LOOKUP ACAD_IN_SEARCH_ENVELOPE_MAXY_ACAD_2 <Unused>,0 
+DEFAULT_MACRO ACAD_IN_SEARCH_ENVELOPE_MAXY_ACAD_2 0
+ACAD_2_SEARCH_ENVELOPE "$(ACAD_IN_SEARCH_ENVELOPE_MAXY_ACAD_2)"
+GUI OPTIONAL FLOAT ACAD_IN_SEARCH_ENVELOPE_MAXY_ACAD_2 Maximum Y:
+# ===========================================================================
+GUI LOOKUP ACAD_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ACAD_2 <Unused>, 
+DEFAULT_MACRO ACAD_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ACAD_2 
+ACAD_2_SEARCH_ENVELOPE "$(ACAD_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ACAD_2)"
+GUI OPTIONAL COORDSYS ACAD_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ACAD_2 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP ACAD_IN_CLIP_TO_ENVELOPE_ACAD_2 <Unused>,NO 
+DEFAULT_MACRO ACAD_IN_CLIP_TO_ENVELOPE_ACAD_2 NO
+ACAD_2_CLIP_TO_ENVELOPE "$(ACAD_IN_CLIP_TO_ENVELOPE_ACAD_2)"
+GUI OPTIONAL CHECKBOX ACAD_IN_CLIP_TO_ENVELOPE_ACAD_2 YES%NO Clip to Search Envelope
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_ALLOW_DASH_CHAR_IN_ATTR_NAMES_ACAD_2 yes
+ACAD_2_ALLOW_DASH_CHAR_IN_ATTR_NAMES "$(ACAD_IN_ALLOW_DASH_CHAR_IN_ATTR_NAMES_ACAD_2)"
+DEFAULT_MACRO ACAD_IN_ACAD_RDR_ADV_PARM_GROUP_ACAD_2 
+GUI OPTIONAL DISCLOSUREGROUP ACAD_IN_ACAD_RDR_ADV_PARM_GROUP_ACAD_2 FME_DISCLOSURE_CLOSED%ACAD_IN_RESOLVE_ENTITY_COLOR_ACAD_2%ACAD_IN_PRESERVE_COMPLEX_HATCHES_ACAD_2%ACAD_IN_PRESERVE_CLIPPED_RASTERS_ACAD_2%ACAD_IN_RESOLVE_DIMENSIONS_ACAD_2%ACAD_IN_EVALUATE_MLINE_GEOM_ACAD_2%ACAD_IN_STORE_SPLINE_DEFS_ACAD_2%ACAD_IN_STORE_BULGE_INFO_ACAD_2%ACAD_IN_IGNORE_UCS_ACAD_2%ACAD_IN_CONVERT_ZERO_LENGTH_ARCS_TO_POINTS_ACAD_2%ACAD_IN_READ_GROUPS_ACAD_2%ACAD_IN_READ_USER_DICTIONARIES_ACAD_2%ACAD_IN_READ_XREFS_ACAD_2%ACAD_IN_STORE_LAYER_INFO_ACAD_2%ACAD_IN_IGNORE_FROZEN_LAYERS_ACAD_2%ACAD_IN_IGNORE_VIEWPORT_FROZEN_LAYERS_ACAD_2%ACAD_IN_IGNORE_HIDDEN_LAYERS_ACAD_2%ACAD_IN_APPLY_WORLD_FILE_ACAD_2%ACAD_IN_READ_PROXY_GRAPHICS_ACAD_2%ACAD_IN_READ_SYS_VARS_ACAD_2%ACAD_IN_READ_REGIONS_AS_AREAS_ACAD_2%ACAD_IN_READ_RASTERS_ACAD_2%ACAD_IN_DXF_HEADER_GROUP_ACAD_2 Advanced
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_CONVERT_ZERO_LENGTH_ARCS_TO_POINTS_ACAD_2 yes
+ACAD_2_CONVERT_ZERO_LENGTH_ARCS_TO_POINTS "$(ACAD_IN_CONVERT_ZERO_LENGTH_ARCS_TO_POINTS_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_CONVERT_ZERO_LENGTH_ARCS_TO_POINTS_ACAD_2 yes%no Convert Zero Length Arcs to Points
+# ============================================================================
+# PR#9808 - Indicate whether we want to resolve entities color or keep it as ByLayer.
+# By default, we'll resolve entity color because that's how we have been doing
+# it all along. So to maintain backwards compatibility we'll keep that as default.
+DEFAULT_MACRO ACAD_IN_RESOLVE_ENTITY_COLOR_ACAD_2 yes
+ACAD_2_RESOLVE_ENTITY_COLOR "$(ACAD_IN_RESOLVE_ENTITY_COLOR_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_RESOLVE_ENTITY_COLOR_ACAD_2 yes%no Resolve Entity Color
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_PRESERVE_COMPLEX_HATCHES_ACAD_2 no
+ACAD_2_PRESERVE_COMPLEX_HATCHES "$(ACAD_IN_PRESERVE_COMPLEX_HATCHES_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_PRESERVE_COMPLEX_HATCHES_ACAD_2 yes%no Preserve Complex Hatches and MPolygons
+# ============================================================================
+# And indicate whether or not to read groups.
+DEFAULT_MACRO ACAD_IN_READ_GROUPS_ACAD_2 no
+ACAD_2_READ_GROUPS "$(ACAD_IN_READ_GROUPS_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_GROUPS_ACAD_2 yes%no Read Groups
+# ============================================================================
+# And indicate whether or not to read xrecords from user dictionaries.
+DEFAULT_MACRO ACAD_IN_READ_USER_DICTIONARIES_ACAD_2 no
+ACAD_2_READ_USER_DICTIONARIES "$(ACAD_IN_READ_USER_DICTIONARIES_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_USER_DICTIONARIES_ACAD_2 yes%no User Dictionary XRecord Data Reading
+# ============================================================================
+# And indicate whether or not to read xrefs.
+DEFAULT_MACRO ACAD_IN_READ_XREFS_ACAD_2 no
+ACAD_2_READ_XREFS "$(ACAD_IN_READ_XREFS_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_XREFS_ACAD_2 yes%no Read External References
+# ============================================================================
+# And indicate whether to read mlines as stored vertexes, or as calculated vertexes.
+DEFAULT_MACRO ACAD_IN_EVALUATE_MLINE_GEOM_ACAD_2 no
+ACAD_2_EVALUATE_MLINE_GEOM "$(ACAD_IN_EVALUATE_MLINE_GEOM_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_EVALUATE_MLINE_GEOM_ACAD_2 yes%no Evaluate Multi-line Entity Geometry
+# ============================================================================
+# Indicate if we want to store layer properties as feature attributes
+DEFAULT_MACRO ACAD_IN_STORE_LAYER_INFO_ACAD_2 no
+ACAD_2_STORE_LAYER_INFO "$(ACAD_IN_STORE_LAYER_INFO_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_STORE_LAYER_INFO_ACAD_2 yes%no Store Layer Properties on Features
+# ============================================================================
+# Decide how we should handle bulges
+DEFAULT_MACRO ACAD_IN_STORE_BULGE_INFO_ACAD_2 no
+ACAD_2_STORE_BULGE_INFO "$(ACAD_IN_STORE_BULGE_INFO_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_STORE_BULGE_INFO_ACAD_2 yes%no Store Bulge Info
+# ============================================================================
+# Decide how we should handle splines
+DEFAULT_MACRO ACAD_IN_STORE_SPLINE_DEFS_ACAD_2 yes
+ACAD_2_STORE_SPLINE_DEFS "$(ACAD_IN_STORE_SPLINE_DEFS_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_STORE_SPLINE_DEFS_ACAD_2 yes%no Store Spline Definitions
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_RESOLVE_DIMENSIONS_ACAD_2 yes
+ACAD_2_RESOLVE_DIMENSIONS "$(ACAD_IN_RESOLVE_DIMENSIONS_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_RESOLVE_DIMENSIONS_ACAD_2 yes%no Explode Dimensions
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_PRESERVE_CLIPPED_RASTERS_ACAD_2 no
+ACAD_2_PRESERVE_CLIPPED_RASTERS "$(ACAD_IN_PRESERVE_CLIPPED_RASTERS_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_PRESERVE_CLIPPED_RASTERS_ACAD_2 yes%no Preserve Clipped Rasters
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_IGNORE_FROZEN_LAYERS_ACAD_2 no
+ACAD_2_IGNORE_FROZEN_LAYERS "$(ACAD_IN_IGNORE_FROZEN_LAYERS_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_IGNORE_FROZEN_LAYERS_ACAD_2 yes%no Ignore Frozen Layers
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_IGNORE_VIEWPORT_FROZEN_LAYERS_ACAD_2 no
+ACAD_2_IGNORE_VIEWPORT_FROZEN_LAYERS "$(ACAD_IN_IGNORE_VIEWPORT_FROZEN_LAYERS_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_IGNORE_VIEWPORT_FROZEN_LAYERS_ACAD_2 yes%no Ignore Viewport Frozen Layers
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_IGNORE_HIDDEN_LAYERS_ACAD_2 yes
+ACAD_2_IGNORE_HIDDEN_LAYERS "$(ACAD_IN_IGNORE_HIDDEN_LAYERS_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_IGNORE_HIDDEN_LAYERS_ACAD_2 yes%no Ignore Hidden Layers
+# ============================================================================
+# 20040114 - Decide if we should handle the user coordinate system (ucs)
+DEFAULT_MACRO ACAD_IN_IGNORE_UCS_ACAD_2 no
+ACAD_2_IGNORE_UCS "$(ACAD_IN_IGNORE_UCS_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_IGNORE_UCS_ACAD_2 yes%no Ignore User Coordinate System (UCS)
+# ============================================================================
+# 20090504 - Decide if we should apply world (.wld/.wld3) file or not - default is YES
+DEFAULT_MACRO ACAD_IN_APPLY_WORLD_FILE_ACAD_2 yes
+ACAD_2_APPLY_WORLD_FILE "$(ACAD_IN_APPLY_WORLD_FILE_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_APPLY_WORLD_FILE_ACAD_2 yes%no Apply World File (.wld/.wld3)
+# ============================================================================
+# Should we read proxy graphics - default is YES
+DEFAULT_MACRO ACAD_IN_READ_PROXY_GRAPHICS_ACAD_2 yes
+ACAD_2_READ_PROXY_GRAPHICS "$(ACAD_IN_READ_PROXY_GRAPHICS_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_PROXY_GRAPHICS_ACAD_2 yes%no Read Proxy Entity Graphics
+# ============================================================================
+# Should we read system variables - default is NO
+DEFAULT_MACRO ACAD_IN_READ_SYS_VARS_ACAD_2 no
+ACAD_2_READ_SYS_VARS "$(ACAD_IN_READ_SYS_VARS_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_SYS_VARS_ACAD_2 yes%no Read Drawing System Variables
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_READ_REGIONS_AS_AREAS_ACAD_2 yes
+ACAD_2_READ_REGIONS_AS_AREAS "$(ACAD_IN_READ_REGIONS_AS_AREAS_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_REGIONS_AS_AREAS_ACAD_2 yes%no Read Region Entities as Areas
+# ============================================================================
+# Should we read rasters - default is YES
+DEFAULT_MACRO ACAD_IN_READ_RASTERS_ACAD_2 yes
+ACAD_2_READ_RASTERS "$(ACAD_IN_READ_RASTERS_ACAD_2)"
+GUI OPTIONAL CHECKBOX_WITHLABEL ACAD_IN_READ_RASTERS_ACAD_2 yes%no Read Raster Entities
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_DXF_HEADER_GROUP_ACAD_2 
+GUI OPTIONAL DISCLOSUREGROUP ACAD_IN_DXF_HEADER_GROUP_ACAD_2 FME_DISCLOSURE_CLOSED%ACAD_IN_USE_DXF_HEADER_ACAD_2 DXF header
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_USE_DXF_HEADER_ACAD_2 
+ACAD_2_USE_DXF_HEADER "$(ACAD_IN_USE_DXF_HEADER_ACAD_2)"
+GUI OPTIONAL FILENAME_MUSTEXIST ACAD_IN_USE_DXF_HEADER_ACAD_2 DXF_Files(*.dxf)|*.dxf|All_files(*.*)|*.* DXF Header File
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_STRUCTURE_EXTENDED_DATA_ACAD_2 no
+ACAD_2_STRUCTURE_EXTENDED_DATA "$(ACAD_IN_STRUCTURE_EXTENDED_DATA_ACAD_2)"
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_USE_NEW_PAPER_SPACE_PARAMETERS_ACAD_2 yes
+ACAD_2_USE_NEW_PAPER_SPACE_PARAMETERS "$(ACAD_IN_USE_NEW_PAPER_SPACE_PARAMETERS_ACAD_2)"
+# ===========================================================================
+DEFAULT_MACRO ACAD_IN_NETWORK_AUTHENTICATION_ACAD_2 
+ACAD_2_NETWORK_AUTHENTICATION "$(ACAD_IN_NETWORK_AUTHENTICATION_ACAD_2)"
+GUI OPTIONAL AUTHENTICATOR ACAD_IN_NETWORK_AUTHENTICATION_ACAD_2 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO ACAD_IN_ATTRIBUTE_READING_ACAD_2 ALL
+ACAD_2_ATTRIBUTE_READING "$(ACAD_IN_ATTRIBUTE_READING_ACAD_2)"
+# ============================================================================
+ACAD_2_GENERATE_FME_BUILD_NUM 23283
+# ============================================================================
+# Bring in macros for all the autocad colors
+INCLUDE "$(FME_HOME)/metafile/autocadColors.fmi"
+ACAD_2_DATASET "$(SourceDataset_ACAD_2)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+FACTORY_DEF * BranchingFactory                                         \
+  FACTORY_NAME "Source Brancher 0"                                     \
+  INPUT FEATURE_TYPE *                                                 \
+    @SupplyAttributes(multi_reader_type,ACAD)                          \
+  TARGET_FACTORY "Branching Catcher"
+
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "FILEGDB_1"
+FACTORY_DEF * TeeFactory                                               \
+  FACTORY_NAME "Source Catcher 1"                                      \
+  INPUT FEATURE_TYPE *                                                 \
+  OUTPUT FEATURE_TYPE *
+
+#! END_WB_HEADER
+#! START_SOURCE_HEADER FILEGDB FILEGDB_1
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_FILEGDB_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER FILEGDB FILEGDB_1
+DEFAULT_MACRO SourceDataset_FILEGDB_1 $(SourceDataset_FILEGDB)
+GUI SOURCE_GEODATABASE SourceDataset_FILEGDB_1 Source Geodatabase:
+DEFAULT_MACRO FILEGDB_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_FILEGDB_1 Yes
+FILEGDB_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(FILEGDB_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_FILEGDB_1)"
+DEFAULT_MACRO FILEGDB_IN_EXPOSE_ATTRS_GROUP_FILEGDB_1 
+FILEGDB_1_EXPOSE_ATTRS_GROUP "$(FILEGDB_IN_EXPOSE_ATTRS_GROUP_FILEGDB_1)"
+GUI OPTIONAL DISCLOSUREGROUP FILEGDB_IN_EXPOSE_ATTRS_GROUP_FILEGDB_1 FILEGDB_EXPOSE_FORMAT_ATTRS Schema Attributes
+# Include this file in source setting section to add native search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+# ===========================================================================
+DEFAULT_MACRO FILEGDB_IN_SEARCH_ENVELOPE_MINX_FILEGDB_1 0
+FILEGDB_1_SEARCH_ENVELOPE "$(FILEGDB_IN_SEARCH_ENVELOPE_MINX_FILEGDB_1)"
+GUI OPTIONAL FLOAT FILEGDB_IN_SEARCH_ENVELOPE_MINX_FILEGDB_1 Minimum X:
+# ===========================================================================
+DEFAULT_MACRO FILEGDB_IN_SEARCH_ENVELOPE_MINY_FILEGDB_1 0
+FILEGDB_1_SEARCH_ENVELOPE "$(FILEGDB_IN_SEARCH_ENVELOPE_MINY_FILEGDB_1)"
+GUI OPTIONAL FLOAT FILEGDB_IN_SEARCH_ENVELOPE_MINY_FILEGDB_1 Minimum Y:
+# ===========================================================================
+DEFAULT_MACRO FILEGDB_IN_SEARCH_ENVELOPE_MAXX_FILEGDB_1 0
+FILEGDB_1_SEARCH_ENVELOPE "$(FILEGDB_IN_SEARCH_ENVELOPE_MAXX_FILEGDB_1)"
+GUI OPTIONAL FLOAT FILEGDB_IN_SEARCH_ENVELOPE_MAXX_FILEGDB_1 Maximum X:
+# ===========================================================================
+DEFAULT_MACRO FILEGDB_IN_SEARCH_ENVELOPE_MAXY_FILEGDB_1 0
+FILEGDB_1_SEARCH_ENVELOPE "$(FILEGDB_IN_SEARCH_ENVELOPE_MAXY_FILEGDB_1)"
+GUI OPTIONAL FLOAT FILEGDB_IN_SEARCH_ENVELOPE_MAXY_FILEGDB_1 Maximum Y:
+# ===========================================================================
+DEFAULT_MACRO FILEGDB_IN_CLIP_TO_ENVELOPE_FILEGDB_1 NO
+FILEGDB_1_CLIP_TO_ENVELOPE "$(FILEGDB_IN_CLIP_TO_ENVELOPE_FILEGDB_1)"
+GUI OPTIONAL CHECKBOX FILEGDB_IN_CLIP_TO_ENVELOPE_FILEGDB_1 YES%NO Clip to Search Envelope
+#INCLUDE searchEnvCoordSys.fmi
+# ===========================================================================
+DEFAULT_MACRO FILEGDB_IN_NETWORK_AUTHENTICATION_FILEGDB_1 
+FILEGDB_1_NETWORK_AUTHENTICATION "$(FILEGDB_IN_NETWORK_AUTHENTICATION_FILEGDB_1)"
+GUI OPTIONAL AUTHENTICATOR FILEGDB_IN_NETWORK_AUTHENTICATION_FILEGDB_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ===========================================================================
+DEFAULT_MACRO FILEGDB_IN_ATTRIBUTE_READING_FILEGDB_1 ALL
+FILEGDB_1_ATTRIBUTE_READING "$(FILEGDB_IN_ATTRIBUTE_READING_FILEGDB_1)"
+# PR:31021
+# Include this file in workbench source preamble section to enable the ability
+# to specify a coordinate system for search envelope processing
+# ===========================================================================
+DEFAULT_MACRO SEARCH_ENVELOPE_COORDINATE_SYSTEM_FILEGDB_1 
+GUI OPTIONAL COORDSYS SEARCH_ENVELOPE_COORDINATE_SYSTEM_FILEGDB_1 Search Envelope Coordinate System:
+FILEGDB_1_SEARCH_ENVELOPE_COORDINATE_SYSTEM "$(SEARCH_ENVELOPE_COORDINATE_SYSTEM_FILEGDB_1)"
+# ===========================================================================
+FILEGDB_1_DATASET "$(SourceDataset_FILEGDB_1)"
+FILEGDB_1_GENERATE_FME_BUILD_NUM 16492
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+FACTORY_DEF * BranchingFactory                                         \
+  FACTORY_NAME "Source Brancher 1"                                     \
+  INPUT FEATURE_TYPE *                                                 \
+    @SupplyAttributes(multi_reader_type,FILEGDB)                       \
+  TARGET_FACTORY "Branching Catcher"
+
+#! END_WB_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! START_WB_HEADER
+FACTORY_DEF * TeeFactory                                               \
+  FACTORY_NAME "Branching Catcher"                                     \
+  INPUT FEATURE_TYPE *                                                 \
+  OUTPUT FEATURE_TYPE *
+
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)CompareWorkspace.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 
+LAST_SAVE_BUILD "FME 2023.1.2.0 (20231110 - Build 23641 - WIN64)"
+MAPPING_FILE_ID SpatialRelationships
+DEFAULT_MACRO DATASET_KEYWORD_ACAD_2 ACAD_2
+DEFAULT_MACRO DATASET_KEYWORD_FILEGDB_1 FILEGDB_1
+# -------------------------------------------------------------------------
+
+ACAD_2_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+FILEGDB_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME CompareWorkspace
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE ACAD ACAD_2::BuildingFootprints multi_reader_keyword,$(DATASET_KEYWORD_ACAD_2) TO FME_GENERIC ::BuildingFootprints ALIAS_GEOMETRY    ROUTE FILEGDB FILEGDB_1::PostalAddress multi_reader_keyword,$(DATASET_KEYWORD_FILEGDB_1) TO FME_GENERIC ::PostalAddress ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+ACAD_2_MERGE_DEF ACAD_2::BuildingFootprints EXACT BuildingFootprints DEFLINE autocad_color,10,autocad_linetype,CONTINUOUS,autocad_layer_frozen,no,autocad_layer_hidden,no,autocad_layer_locked,no,autocad_layer_on,yes,autocad_layer_plottable,yes,autocad_layer_desc,
+FILEGDB_1_MERGE_DEF FILEGDB_1::PostalAddress EXACT PostalAddress DEFLINE filegdb_type,geodb_point,filegdb_where,,OBJECTID,objectid,GlobalID,guid,OWNERNM1,text<openparen>150<closeparen>,OWNERNM2,text<openparen>150<closeparen>,PSTLADDRESS,text<openparen>250<closeparen>,PSTLCITY,text<openparen>100<closeparen>,PSTLPROV,text<openparen>25<closeparen>,INTSTATE,text<openparen>5<closeparen>,INTPSTLCD,text<openparen>10<closeparen>,COUNTRY,text<openparen>100<closeparen>,REPRESENT,text<openparen>14<closeparen>,STATUS,text<openparen>9<closeparen>,LASTUPDATE,date,LASTEDITOR,text<openparen>50<closeparen>,POSTALCODE,text<openparen>6<closeparen>
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "BuildingFootprints_ACAD_2 Splitter"    INPUT FEATURE_TYPE BuildingFootprints    OUTPUT FEATURE_TYPE BuildingFootprints_ACAD_2_0_+27xAR4MklU=    OUTPUT FEATURE_TYPE BuildingFootprints_ACAD_2_1_l2ym1pBvrbY=
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "PostalAddress_FILEGDB_1 Splitter"    INPUT FEATURE_TYPE PostalAddress    OUTPUT FEATURE_TYPE PostalAddress_FILEGDB_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+# Set the directive to add all the meta-attributes to the features.
+# We do this so users see all possible information in the viewed
+# features.
+READER_META_ATTRIBUTES fme_feature_type fme_dataset fme_basename
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [         set grpByAttrs {};         if { [string length $grpByAttrs] > 0 } {             if { [string first "@EvaluateExpression" $grpByAttrs] == 0 } {                 puts "MACRO CATMAC _$grpByAttrs" ;             } else {                set catter "" ;                set comma "" ;                foreach attr $grpByAttrs {                    set catter "$catter$comma@Value(\"$attr\")" ;                    set comma ",_," ;                } ;                puts "MACRO CATMAC _@Concatenate($catter)" ;             }         }         else {             puts "MACRO CATMAC " ;         };         set safeName "[regsub -all {[^a-zA-Z0-9]} {BuildingFootprints} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";         puts "MACRO SAFE_FFS_NAME $safeName";         ]
+# Make the temporary directory that the FFS files will live in.
+FACTORY_DEF * CreationFactory      FACTORY_NAME BuildingFootprints_DirCreator      OUTPUT FEATURE_TYPE __nukeme__          @Tcl2("catch {file mkdir {$(WORKSPACE_TEMP_DIR)}}")
+FACTORY_DEF * TeeFactory    FACTORY_NAME BuildingFootprints_DirCreatorCleanerUpper    INPUT FEATURE_TYPE __nukeme__
+# Send raster, point cloud and vector features down different paths to prepare
+# them for viewing
+FACTORY_DEF * TestFactory    FACTORY_NAME BuildingFootprints_FeatureDirector    INPUT  FEATURE_TYPE BuildingFootprints_ACAD_2_1_l2ym1pBvrbY=    TEST &fme_type == "fme_raster"    OUTPUT FAILED FEATURE_TYPE BuildingFootprints___NotRasterFeatures___    OUTPUT PASSED FEATURE_TYPE BuildingFootprints___RasterFeatures___
+FACTORY_DEF * TestFactory    FACTORY_NAME BuildingFootprints___FeatureDirector1    INPUT FEATURE_TYPE BuildingFootprints___NotRasterFeatures___    TEST &fme_type == "fme_point_cloud"    OUTPUT FAILED FEATURE_TYPE BuildingFootprints___VectorFeatures___    OUTPUT PASSED FEATURE_TYPE BuildingFootprints___PointCloudFeatures___
+# Vector features simply may get their colors overridden
+FACTORY_DEF * TeeFactory    FACTORY_NAME BuildingFootprints_VectorSetterUpper    INPUT FEATURE_TYPE BuildingFootprints___VectorFeatures___    OUTPUT FEATURE_TYPE __viewme__
+# Point Cloud Features Might Need to be thinned
+# Note that we don't call the ThinPointCloud function directly, but rather
+# do it through TCL. This should allow this transformer to be used with a
+# Desktop license, even though ThinPointCloud requires Professional.
+Tcl2 proc BuildingFootprints_a7a35c59_24bd_4fa0_a8aa_070eb1eaedae1_thinPointCloud {} {    if {[string equal {NO_THINNING} {KEEPNPOINT}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {MAXNUMPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {FIRSTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {LASTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME BuildingFootprints___PointCloudThinner    INPUT FEATURE_TYPE BuildingFootprints___PointCloudFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("BuildingFootprints_a7a35c59_24bd_4fa0_a8aa_070eb1eaedae1_thinPointCloud")
+Tcl2 proc BuildingFootprints_a7a35c59_24bd_4fa0_a8aa_070eb1eaedae1_prepareRaster {subsetStartRow subsetNumRows subsetStartCol subsetNumCols} {    set useDI [string equal -nocase {$(FME_VIEWER_APP)} {fmedatainspector}];    if {!$useDI} {       FME_Execute ApplyRasterRotation BILINEAR;    };    set doResample [string equal {NoReduction} {Resample}];    set doSubset [string equal {NoReduction} {Subset}];    set doBounds [string equal {NoReduction} {BoundingBoxOnly}];    if {$doBounds}  {       FME_Execute GeometryType fme_polygon;    }    elseif {$doResample || $doSubset} {       set comment {          First, we need to prefix all the attributes. This is done because          we are going to call @RasterProperties, and we want to make sure          it doesn't overwrite any existing attributes.       };       set kAttrPrefix ".";       set allNames [FME_AttributeNames];       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $newName $oldName;       };       FME_Execute RasterProperties RASTER;       if {$doResample} {          set oldNumCols [FME_GetAttribute _num_columns];          set oldNumRows [FME_GetAttribute _num_rows];          set oldSpacingX [FME_GetAttribute _spacing_x];          set oldSpacingY [FME_GetAttribute _spacing_y];          set kMinNumCells 32;          set kMaxNumCells 512;          set comment {             We will only resample if both dimensions are greater than the             minimum num cells, and at least one is greater than the maximum.          };          if {$oldNumRows > $kMinNumCells && $oldNumCols > $kMinNumCells && ($oldNumRows > $kMaxNumCells || $oldNumCols > $kMaxNumCells)} {             set newSpacingX 1.0;             set newSpacingY 1.0;             if {$oldNumRows > $oldNumCols} {                set comment {                   If we have more rows than columns, we need to choose a spacing                   that reduces the number of rows to the maximum we've chosen.                };                set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMaxNumCells];                set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                set comment {                   Now we need to check if doing this will result in the columns                   going below the minimum. If so, choose the spacing such that                   we only go down to the minimum (and not past).                };                set newNumCols [expr $oldNumCols * $oldSpacingX / $newSpacingX];                if {$newNumCols < $kMinNumCells}                {                   set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMinNumCells];                   set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                };             }             else {                set comment {                   This is identical to the above case, except the roles of                   rows and cols are reversed.                };                set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMaxNumCells];                set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                set newNumRows [expr $oldNumRows * $oldSpacingY / $newSpacingY];                if {$newNumRows < $kMinNumCells}                {                   set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMinNumCells];                   set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                };             };             FME_Execute ResampleRaster CELL_SIZE $newSpacingX $newSpacingY NearestNeighbor;          };       }       elseif {$doSubset} {          set comment {             Get the value of some strings that may be attributes or constants.             Note that we pass in the attribute prefix we're using, because if             one does turn out to be an attribute, it won't actually be the exact             name in the string (since we renamed all our attributes above).          };          set rasterNumRows [FME_GetAttribute _num_rows];          set rasterNumCols [FME_GetAttribute _num_columns];          set comment {             Only do subsetting if the specified start position is actually             within the raster.          };          if {$subsetStartRow < $rasterNumRows && $subsetStartCol < $rasterNumCols}          {             set comment {                Now bound the subset to the size of the raster, so that                we don't create padding.             };             if {[expr $subsetStartRow + $subsetNumRows] > $rasterNumRows}             {                set subsetNumRows [expr $rasterNumRows - $subsetStartRow];             };             if {[expr $subsetStartCol + $subsetNumCols] > $rasterNumCols}             {                set subsetNumCols [expr $rasterNumCols - $subsetStartCol];             };             FME_Execute SubsetRaster $subsetStartRow $subsetNumRows $subsetStartCol $subsetNumCols;          };       };       set comment {          Remove all the attributes added by @RasterProperties and remove the          prefix from the real attributes. We assume they all start with an          underscore.       };       FME_Execute RemoveAttributes fme_regexp_match {^_};       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $oldName $newName;       };    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME BuildingFootprints_RasterSetterUpper    INPUT FEATURE_TYPE BuildingFootprints___RasterFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("BuildingFootprints_a7a35c59_24bd_4fa0_a8aa_070eb1eaedae1_prepareRaster {<Unused>} {<Unused>} {<Unused>} {<Unused>}")
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+# BuildingFootprints_a7a35c59_24bd_4fa0_a8aa_070eb1eaedae1_VIS_FEAT_TYPE changes the feature types
+# of the features being visualized.
+DEFAULT_MACRO BuildingFootprints_a7a35c59_24bd_4fa0_a8aa_070eb1eaedae1_VIS_FEAT_TYPE BuildingFootprints$(CATMAC)
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+FACTORY_DEF * RecorderFactory    FACTORY_NAME BuildingFootprints_Recorder    INPUT FEATURE_TYPE __viewme__  _wb_termination_feature Yes @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__  @FeatureType($(BuildingFootprints_a7a35c59_24bd_4fa0_a8aa_070eb1eaedae1_VIS_FEAT_TYPE))    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} SpatialFilterFactory    FACTORY_NAME SpatialFilter    INPUT BASE FEATURE_TYPE BuildingFootprints_ACAD_2_0_+27xAR4MklU=    INPUT CANDIDATE FEATURE_TYPE PostalAddress_FILEGDB_1    PREDICATE "CONTAINS"    USE_BOUNDING_BOX NO    MULTIPLE_BASES YES    MERGE_BASE_ATTR YES    ATTR_ACCUM_MODE "HANDLE_CONFLICT"    ATTR_CONFLICT_RES "CANDIDATE_IF_CONFLICT"    BASE_ATTR_PREFIX "<Unused>"    PREDICATE_ATTR "_predicate"    BOOLEAN_OPERATOR OR    REJECT_INVALID_GEOM Yes    REJECT_INVALID_PREDICATES Yes    CUSTOM_MULTI_HANDLING Yes    DIMENSION 2    CURVE_BOUNDARY_RULE ENDPOINTS_MOD2    OUTPUT PASSED FEATURE_TYPE SpatialFilter_PASSED    OUTPUT FAILED FEATURE_TYPE SpatialFilter_FAILED
+# -------------------------------------------------------------------------
+# Set the directive to add all the meta-attributes to the features.
+# We do this so users see all possible information in the viewed
+# features.
+READER_META_ATTRIBUTES fme_feature_type fme_dataset fme_basename
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [         set grpByAttrs {};         if { [string length $grpByAttrs] > 0 } {             if { [string first "@EvaluateExpression" $grpByAttrs] == 0 } {                 puts "MACRO CATMAC _$grpByAttrs" ;             } else {                set catter "" ;                set comma "" ;                foreach attr $grpByAttrs {                    set catter "$catter$comma@Value(\"$attr\")" ;                    set comma ",_," ;                } ;                puts "MACRO CATMAC _@Concatenate($catter)" ;             }         }         else {             puts "MACRO CATMAC " ;         };         set safeName "[regsub -all {[^a-zA-Z0-9]} {Passed} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";         puts "MACRO SAFE_FFS_NAME $safeName";         ]
+# Make the temporary directory that the FFS files will live in.
+FACTORY_DEF * CreationFactory      FACTORY_NAME Passed_DirCreator      OUTPUT FEATURE_TYPE __nukeme__          @Tcl2("catch {file mkdir {$(WORKSPACE_TEMP_DIR)}}")
+FACTORY_DEF * TeeFactory    FACTORY_NAME Passed_DirCreatorCleanerUpper    INPUT FEATURE_TYPE __nukeme__
+# Send raster, point cloud and vector features down different paths to prepare
+# them for viewing
+FACTORY_DEF * TestFactory    FACTORY_NAME Passed_FeatureDirector    INPUT  FEATURE_TYPE SpatialFilter_PASSED    TEST &fme_type == "fme_raster"    OUTPUT FAILED FEATURE_TYPE Passed___NotRasterFeatures___    OUTPUT PASSED FEATURE_TYPE Passed___RasterFeatures___
+FACTORY_DEF * TestFactory    FACTORY_NAME Passed___FeatureDirector1    INPUT FEATURE_TYPE Passed___NotRasterFeatures___    TEST &fme_type == "fme_point_cloud"    OUTPUT FAILED FEATURE_TYPE Passed___VectorFeatures___    OUTPUT PASSED FEATURE_TYPE Passed___PointCloudFeatures___
+# Vector features simply may get their colors overridden
+FACTORY_DEF * TeeFactory    FACTORY_NAME Passed_VectorSetterUpper    INPUT FEATURE_TYPE Passed___VectorFeatures___    OUTPUT FEATURE_TYPE __viewme__
+# Point Cloud Features Might Need to be thinned
+# Note that we don't call the ThinPointCloud function directly, but rather
+# do it through TCL. This should allow this transformer to be used with a
+# Desktop license, even though ThinPointCloud requires Professional.
+Tcl2 proc Passed_9f7a026b_7590_426a_b1ca_b149edc11a351_thinPointCloud {} {    if {[string equal {NO_THINNING} {KEEPNPOINT}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {MAXNUMPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {FIRSTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {LASTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME Passed___PointCloudThinner    INPUT FEATURE_TYPE Passed___PointCloudFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("Passed_9f7a026b_7590_426a_b1ca_b149edc11a351_thinPointCloud")
+Tcl2 proc Passed_9f7a026b_7590_426a_b1ca_b149edc11a351_prepareRaster {subsetStartRow subsetNumRows subsetStartCol subsetNumCols} {    set useDI [string equal -nocase {$(FME_VIEWER_APP)} {fmedatainspector}];    if {!$useDI} {       FME_Execute ApplyRasterRotation BILINEAR;    };    set doResample [string equal {NoReduction} {Resample}];    set doSubset [string equal {NoReduction} {Subset}];    set doBounds [string equal {NoReduction} {BoundingBoxOnly}];    if {$doBounds}  {       FME_Execute GeometryType fme_polygon;    }    elseif {$doResample || $doSubset} {       set comment {          First, we need to prefix all the attributes. This is done because          we are going to call @RasterProperties, and we want to make sure          it doesn't overwrite any existing attributes.       };       set kAttrPrefix ".";       set allNames [FME_AttributeNames];       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $newName $oldName;       };       FME_Execute RasterProperties RASTER;       if {$doResample} {          set oldNumCols [FME_GetAttribute _num_columns];          set oldNumRows [FME_GetAttribute _num_rows];          set oldSpacingX [FME_GetAttribute _spacing_x];          set oldSpacingY [FME_GetAttribute _spacing_y];          set kMinNumCells 32;          set kMaxNumCells 512;          set comment {             We will only resample if both dimensions are greater than the             minimum num cells, and at least one is greater than the maximum.          };          if {$oldNumRows > $kMinNumCells && $oldNumCols > $kMinNumCells && ($oldNumRows > $kMaxNumCells || $oldNumCols > $kMaxNumCells)} {             set newSpacingX 1.0;             set newSpacingY 1.0;             if {$oldNumRows > $oldNumCols} {                set comment {                   If we have more rows than columns, we need to choose a spacing                   that reduces the number of rows to the maximum we've chosen.                };                set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMaxNumCells];                set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                set comment {                   Now we need to check if doing this will result in the columns                   going below the minimum. If so, choose the spacing such that                   we only go down to the minimum (and not past).                };                set newNumCols [expr $oldNumCols * $oldSpacingX / $newSpacingX];                if {$newNumCols < $kMinNumCells}                {                   set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMinNumCells];                   set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                };             }             else {                set comment {                   This is identical to the above case, except the roles of                   rows and cols are reversed.                };                set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMaxNumCells];                set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                set newNumRows [expr $oldNumRows * $oldSpacingY / $newSpacingY];                if {$newNumRows < $kMinNumCells}                {                   set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMinNumCells];                   set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                };             };             FME_Execute ResampleRaster CELL_SIZE $newSpacingX $newSpacingY NearestNeighbor;          };       }       elseif {$doSubset} {          set comment {             Get the value of some strings that may be attributes or constants.             Note that we pass in the attribute prefix we're using, because if             one does turn out to be an attribute, it won't actually be the exact             name in the string (since we renamed all our attributes above).          };          set rasterNumRows [FME_GetAttribute _num_rows];          set rasterNumCols [FME_GetAttribute _num_columns];          set comment {             Only do subsetting if the specified start position is actually             within the raster.          };          if {$subsetStartRow < $rasterNumRows && $subsetStartCol < $rasterNumCols}          {             set comment {                Now bound the subset to the size of the raster, so that                we don't create padding.             };             if {[expr $subsetStartRow + $subsetNumRows] > $rasterNumRows}             {                set subsetNumRows [expr $rasterNumRows - $subsetStartRow];             };             if {[expr $subsetStartCol + $subsetNumCols] > $rasterNumCols}             {                set subsetNumCols [expr $rasterNumCols - $subsetStartCol];             };             FME_Execute SubsetRaster $subsetStartRow $subsetNumRows $subsetStartCol $subsetNumCols;          };       };       set comment {          Remove all the attributes added by @RasterProperties and remove the          prefix from the real attributes. We assume they all start with an          underscore.       };       FME_Execute RemoveAttributes fme_regexp_match {^_};       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $oldName $newName;       };    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME Passed_RasterSetterUpper    INPUT FEATURE_TYPE Passed___RasterFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("Passed_9f7a026b_7590_426a_b1ca_b149edc11a351_prepareRaster {<Unused>} {<Unused>} {<Unused>} {<Unused>}")
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+# Passed_9f7a026b_7590_426a_b1ca_b149edc11a351_VIS_FEAT_TYPE changes the feature types
+# of the features being visualized.
+DEFAULT_MACRO Passed_9f7a026b_7590_426a_b1ca_b149edc11a351_VIS_FEAT_TYPE Passed$(CATMAC)
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+FACTORY_DEF * RecorderFactory    FACTORY_NAME Passed_Recorder    INPUT FEATURE_TYPE __viewme__  _wb_termination_feature Yes @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__  @FeatureType($(Passed_9f7a026b_7590_426a_b1ca_b149edc11a351_VIS_FEAT_TYPE))    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA OBJECTID,int32,GlobalID,buffer,OWNERNM1,varchar<openparen>150<closeparen>,OWNERNM2,varchar<openparen>150<closeparen>,PSTLADDRESS,varchar<openparen>250<closeparen>,PSTLCITY,varchar<openparen>100<closeparen>,PSTLPROV,varchar<openparen>25<closeparen>,INTSTATE,varchar<openparen>5<closeparen>,INTPSTLCD,varchar<openparen>10<closeparen>,COUNTRY,varchar<openparen>100<closeparen>,REPRESENT,varchar<openparen>14<closeparen>,STATUS,varchar<openparen>9<closeparen>,LASTUPDATE,datetime,LASTEDITOR,varchar<openparen>50<closeparen>,POSTALCODE,varchar<openparen>6<closeparen>,_predicate,buffer    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+# -------------------------------------------------------------------------
+# Set the directive to add all the meta-attributes to the features.
+# We do this so users see all possible information in the viewed
+# features.
+READER_META_ATTRIBUTES fme_feature_type fme_dataset fme_basename
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [         set grpByAttrs {};         if { [string length $grpByAttrs] > 0 } {             if { [string first "@EvaluateExpression" $grpByAttrs] == 0 } {                 puts "MACRO CATMAC _$grpByAttrs" ;             } else {                set catter "" ;                set comma "" ;                foreach attr $grpByAttrs {                    set catter "$catter$comma@Value(\"$attr\")" ;                    set comma ",_," ;                } ;                puts "MACRO CATMAC _@Concatenate($catter)" ;             }         }         else {             puts "MACRO CATMAC " ;         };         set safeName "[regsub -all {[^a-zA-Z0-9]} {Failed} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";         puts "MACRO SAFE_FFS_NAME $safeName";         ]
+# Make the temporary directory that the FFS files will live in.
+FACTORY_DEF * CreationFactory      FACTORY_NAME Failed_DirCreator      OUTPUT FEATURE_TYPE __nukeme__          @Tcl2("catch {file mkdir {$(WORKSPACE_TEMP_DIR)}}")
+FACTORY_DEF * TeeFactory    FACTORY_NAME Failed_DirCreatorCleanerUpper    INPUT FEATURE_TYPE __nukeme__
+# Send raster, point cloud and vector features down different paths to prepare
+# them for viewing
+FACTORY_DEF * TestFactory    FACTORY_NAME Failed_FeatureDirector    INPUT  FEATURE_TYPE SpatialFilter_FAILED    TEST &fme_type == "fme_raster"    OUTPUT FAILED FEATURE_TYPE Failed___NotRasterFeatures___    OUTPUT PASSED FEATURE_TYPE Failed___RasterFeatures___
+FACTORY_DEF * TestFactory    FACTORY_NAME Failed___FeatureDirector1    INPUT FEATURE_TYPE Failed___NotRasterFeatures___    TEST &fme_type == "fme_point_cloud"    OUTPUT FAILED FEATURE_TYPE Failed___VectorFeatures___    OUTPUT PASSED FEATURE_TYPE Failed___PointCloudFeatures___
+# Vector features simply may get their colors overridden
+FACTORY_DEF * TeeFactory    FACTORY_NAME Failed_VectorSetterUpper    INPUT FEATURE_TYPE Failed___VectorFeatures___    OUTPUT FEATURE_TYPE __viewme__
+# Point Cloud Features Might Need to be thinned
+# Note that we don't call the ThinPointCloud function directly, but rather
+# do it through TCL. This should allow this transformer to be used with a
+# Desktop license, even though ThinPointCloud requires Professional.
+Tcl2 proc Failed_291a2042_bc40_4d6e_b697_4097af5bfc801_thinPointCloud {} {    if {[string equal {NO_THINNING} {KEEPNPOINT}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {MAXNUMPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {FIRSTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {LASTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME Failed___PointCloudThinner    INPUT FEATURE_TYPE Failed___PointCloudFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("Failed_291a2042_bc40_4d6e_b697_4097af5bfc801_thinPointCloud")
+Tcl2 proc Failed_291a2042_bc40_4d6e_b697_4097af5bfc801_prepareRaster {subsetStartRow subsetNumRows subsetStartCol subsetNumCols} {    set useDI [string equal -nocase {$(FME_VIEWER_APP)} {fmedatainspector}];    if {!$useDI} {       FME_Execute ApplyRasterRotation BILINEAR;    };    set doResample [string equal {NoReduction} {Resample}];    set doSubset [string equal {NoReduction} {Subset}];    set doBounds [string equal {NoReduction} {BoundingBoxOnly}];    if {$doBounds}  {       FME_Execute GeometryType fme_polygon;    }    elseif {$doResample || $doSubset} {       set comment {          First, we need to prefix all the attributes. This is done because          we are going to call @RasterProperties, and we want to make sure          it doesn't overwrite any existing attributes.       };       set kAttrPrefix ".";       set allNames [FME_AttributeNames];       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $newName $oldName;       };       FME_Execute RasterProperties RASTER;       if {$doResample} {          set oldNumCols [FME_GetAttribute _num_columns];          set oldNumRows [FME_GetAttribute _num_rows];          set oldSpacingX [FME_GetAttribute _spacing_x];          set oldSpacingY [FME_GetAttribute _spacing_y];          set kMinNumCells 32;          set kMaxNumCells 512;          set comment {             We will only resample if both dimensions are greater than the             minimum num cells, and at least one is greater than the maximum.          };          if {$oldNumRows > $kMinNumCells && $oldNumCols > $kMinNumCells && ($oldNumRows > $kMaxNumCells || $oldNumCols > $kMaxNumCells)} {             set newSpacingX 1.0;             set newSpacingY 1.0;             if {$oldNumRows > $oldNumCols} {                set comment {                   If we have more rows than columns, we need to choose a spacing                   that reduces the number of rows to the maximum we've chosen.                };                set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMaxNumCells];                set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                set comment {                   Now we need to check if doing this will result in the columns                   going below the minimum. If so, choose the spacing such that                   we only go down to the minimum (and not past).                };                set newNumCols [expr $oldNumCols * $oldSpacingX / $newSpacingX];                if {$newNumCols < $kMinNumCells}                {                   set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMinNumCells];                   set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                };             }             else {                set comment {                   This is identical to the above case, except the roles of                   rows and cols are reversed.                };                set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMaxNumCells];                set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                set newNumRows [expr $oldNumRows * $oldSpacingY / $newSpacingY];                if {$newNumRows < $kMinNumCells}                {                   set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMinNumCells];                   set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                };             };             FME_Execute ResampleRaster CELL_SIZE $newSpacingX $newSpacingY NearestNeighbor;          };       }       elseif {$doSubset} {          set comment {             Get the value of some strings that may be attributes or constants.             Note that we pass in the attribute prefix we're using, because if             one does turn out to be an attribute, it won't actually be the exact             name in the string (since we renamed all our attributes above).          };          set rasterNumRows [FME_GetAttribute _num_rows];          set rasterNumCols [FME_GetAttribute _num_columns];          set comment {             Only do subsetting if the specified start position is actually             within the raster.          };          if {$subsetStartRow < $rasterNumRows && $subsetStartCol < $rasterNumCols}          {             set comment {                Now bound the subset to the size of the raster, so that                we don't create padding.             };             if {[expr $subsetStartRow + $subsetNumRows] > $rasterNumRows}             {                set subsetNumRows [expr $rasterNumRows - $subsetStartRow];             };             if {[expr $subsetStartCol + $subsetNumCols] > $rasterNumCols}             {                set subsetNumCols [expr $rasterNumCols - $subsetStartCol];             };             FME_Execute SubsetRaster $subsetStartRow $subsetNumRows $subsetStartCol $subsetNumCols;          };       };       set comment {          Remove all the attributes added by @RasterProperties and remove the          prefix from the real attributes. We assume they all start with an          underscore.       };       FME_Execute RemoveAttributes fme_regexp_match {^_};       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $oldName $newName;       };    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME Failed_RasterSetterUpper    INPUT FEATURE_TYPE Failed___RasterFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("Failed_291a2042_bc40_4d6e_b697_4097af5bfc801_prepareRaster {<Unused>} {<Unused>} {<Unused>} {<Unused>}")
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+# Failed_291a2042_bc40_4d6e_b697_4097af5bfc801_VIS_FEAT_TYPE changes the feature types
+# of the features being visualized.
+DEFAULT_MACRO Failed_291a2042_bc40_4d6e_b697_4097af5bfc801_VIS_FEAT_TYPE Failed$(CATMAC)
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+FACTORY_DEF * RecorderFactory    FACTORY_NAME Failed_Recorder    INPUT FEATURE_TYPE __viewme__  _wb_termination_feature Yes @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__  @FeatureType($(Failed_291a2042_bc40_4d6e_b697_4097af5bfc801_VIS_FEAT_TYPE))    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA OBJECTID,int32,GlobalID,buffer,OWNERNM1,varchar<openparen>150<closeparen>,OWNERNM2,varchar<openparen>150<closeparen>,PSTLADDRESS,varchar<openparen>250<closeparen>,PSTLCITY,varchar<openparen>100<closeparen>,PSTLPROV,varchar<openparen>25<closeparen>,INTSTATE,varchar<openparen>5<closeparen>,INTPSTLCD,varchar<openparen>10<closeparen>,COUNTRY,varchar<openparen>100<closeparen>,REPRESENT,varchar<openparen>14<closeparen>,STATUS,varchar<openparen>9<closeparen>,LASTUPDATE,datetime,LASTEDITOR,varchar<openparen>50<closeparen>,POSTALCODE,varchar<openparen>6<closeparen>    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+
+DEFAULT_MACRO FME_LAUNCH_VIEWER_APP NO
+FACTORY_DEF * CreationFactory    FACTORY_NAME VisualizerProcessor   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if {{$(FME_LAUNCH_VIEWER_APP)} == {YES}} {  if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; }; ")
+FACTORY_DEF * TeeFactory    FACTORY_NAME VisualizerCleaner   INPUT FEATURE_TYPE __NUKEME__
